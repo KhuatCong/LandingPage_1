@@ -5,7 +5,7 @@
     
 }
 body{
-    background-color:#F8F8FF !important;
+    
     font-family: Arial, Helvetica, sans-serif;
 }
 p{
@@ -105,7 +105,7 @@ p{
     text-decoration: none;
 }
 
-.menu-phone, .content-footer li a:hover{
+.menu-phone li a:hover{
     color: orange;
 }
 .menu-bottom li{
@@ -116,7 +116,7 @@ p{
     color: black;
     font-weight: bold;
 }
-.menu-bottom, ul{
+.menu-bottom ul{
     margin-bottom: 0 !important;
     padding: 10px 0;
 }
@@ -141,6 +141,9 @@ p{
     color: black;
     font-size: 14px;
 }
+.content-footer li a:hover{
+    color: orange;
+}
 .link-copyright a{
     color: white;
     text-decoration: none;
@@ -155,4 +158,35 @@ p{
 .breadcrumb li a{
     color: black;
     font-weight: bold;
+}
+.menu-bottom li a:hover{
+    color: orange;
+}
+.thong-tin-san-pham h4{
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.ma-sp,.gia-sp{
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.mota-sp {
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.hover-img{
+    overflow: hidden;
+}
+.hover-img img{
+    transition: 1s;
+}
+.hover-img img:hover{
+    transform: scale(1.5);
+    transition: 1s;
 }

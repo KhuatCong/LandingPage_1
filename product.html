@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="owl/owl.theme.default.min.css">
     <link rel="stylesheet" href="aos/aos.css">
     <style>
-        body{
+        body {
             background-color: white !important;
         }
     </style>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
             </div>
-            <div class="topheader py-3 ">
+            <div class="topheader py-4 ">
                 <div class="container">
                     <div class="row d-flex align-items-center">
                         <div class="col-sm-4 col-lg-4 col-xl-4">
@@ -147,9 +147,10 @@
         </section>
     </header>
 
+
     <div class="content my-4">
         <div class="container">
-            <div class="product-title border-bottom border-secondary d-flex flex-content-between">
+            <div class="product-title border-bottom border-secondary d-flex flex-content-between mb-4">
                 <!-- <div class="title">
                     <h4 style="font-weight: bold;">Sản phẩm</h4>
                 </div> -->
@@ -167,12 +168,33 @@
                     <div class="col-lg-9">
                         <div class="row">
                             <div class="col-lg-6">
-                                <img src="img/sell/sell1.jpg" alt="">
+                                <div class="hover-img">
+                                    <img src="img/sell/sell1.jpg" alt="" style="cursor: pointer;">
+                                </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="thong-tin-san-pham">
-                                    <p>Thông tin sản phẩm</p>
-                                </div>
+                                <form action="">
+                                    <div class="thong-tin-san-pham">
+                                        <div class="ten-sp">
+                                            <h4>Thông tin sản phẩm</h4>
+                                        </div>
+                                        <div class="ma-sp">
+                                            <p>Mã sản phẩm: SQ001</p>
+                                        </div>
+                                        <div class="gia-sp">
+                                            <p style="color: red;">Giá: 9.900.000 VNĐ</p>
+                                        </div>
+                                        <div class="mota-sp">
+                                            <p>Thông tin mô tả ngắn sản phẩm</p>
+                                            <p> - Chất liệu: Nhựa dẻo</p>
+                                            <p> - Xuất xứ: Việt Nam</p>
+                                            <p> - Bảo hành: 3 năm</p>
+                                        </div>
+                                    </div>
+                                    <div class="button-buy">
+                                        <button type="submit" class="btn btn-danger btn-block">Mua ngay</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -185,6 +207,7 @@
             </div>
         </div>
     </div>
+
 
     <footer class="footer">
         <section class="menu-bottom">
@@ -265,7 +288,7 @@
                                     <div class="thong-tin">
                                         <h6>Thanh toán online</h6>
                                         <div class="content-footer">
-                                            <img src="img/thanh-toan.png" style="width: 100%;" alt="">
+                                            <img src="img/thanh-toan.png" style="width: auto;" alt="">
                                         </div>
                                     </div>
                                 </div>
