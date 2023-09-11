@@ -27,7 +27,7 @@ p{
     }
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width:992px) {
     .nav-link{
         font-size: 14px !important;
     }
@@ -189,4 +189,17 @@ p{
 .hover-img img:hover{
     transform: scale(1.5);
     transition: 1s;
+}
+.thong-tin-chi-tiet .nav-link{
+    color: black !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.thong-tin-chi-tiet ul:first-child{
+    background-color: #F8F8FF;
+}
+.dot::after{
+    content: "*";
+    color: red;
 }
