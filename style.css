@@ -199,6 +199,9 @@ p{
 .thong-tin-chi-tiet ul:first-child{
     background-color: #F8F8FF;
 }
+.thong-tin-chi-tiet{
+    border: 1px solid #e6e6e6;
+}
 .dot::after{
     content: "*";
     color: red;
