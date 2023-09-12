@@ -6,7 +6,7 @@
 }
 body{
     
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }
 p{
     margin-bottom: 0px !important;
@@ -46,10 +46,11 @@ p{
         display: none;
     }
 }
-.nav-link{
+.navbar .nav-link{
     color: white !important;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0px 4px ;
+    text-transform: uppercase;
 }
 .topcontact .nav-link{
     padding: 0;
@@ -180,16 +181,6 @@ p{
     margin-bottom: 15px;
     line-height: 30px;
 }
-.hover-img{
-    overflow: hidden;
-}
-.hover-img img{
-    transition: 1s;
-}
-.hover-img img:hover{
-    transform: scale(1.5);
-    transition: 1s;
-}
 .thong-tin-chi-tiet .nav-link{
     color: black !important;
     font-weight: bold;
@@ -215,4 +206,7 @@ p{
     padding-top: 10px;
     margin-bottom: 10px;
     border-top: 1px solid rgba(128, 128, 128, 0.3);
+}
+.click-img img{
+    border: 1px solid rgba(128, 128, 128, 0.35);
 }

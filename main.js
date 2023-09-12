@@ -51,3 +51,11 @@ $(document).ready(function () {
 //         e.preventDefault();
 //     });
 })
+
+// alert('Về "Trang chủ" để sử dụng tất cả chức năng');
+
+function change(image){
+    var content = document.getElementById('img');
+
+    content.src = image.src;
+}
