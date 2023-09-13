@@ -4,6 +4,9 @@
     box-sizing: border-box !important;
     
 }
+.container{
+    max-width: 1230px !important;
+}
 body{
     
     font-family: sans-serif;
