@@ -15,7 +15,7 @@ p{
     line-height: normal;
 }
 .dropdown-menu{
-    background-color: blanchedalmond !important;
+    background-color: rgb(255, 232, 203) !important;
 }
 .dropdown-menu a:hover{
     background-color: rgb(250, 223, 190) !important;
@@ -198,11 +198,7 @@ p{
     content: "*";
     color: red;
 }
-.tin-noi-bat .nav-link {
-    padding: 10px 0px;
-    color: black !important;
-    
-}
+
 .tin-noi-bat .nav-item{
     padding-top: 10px;
     margin-bottom: 10px;

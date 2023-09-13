@@ -120,6 +120,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- <a class="navbar-brand" href="#"><i class="fa-solid fa-bars mr-2"></i>Danh mục sản phẩm</a> -->
+
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
                                 <a style="text-transform: uppercase;" class="nav-link" href="home.html">Trang chủ</a>
@@ -155,59 +156,62 @@
             <div class="row">
                 <div class="col-lg-3 col-xl-3 mt-2">
                     <div class="topmenu bg-danger">
-                        <p class="text-light p-2" style="font-weight: bold; font-size: 18px;"><i
-                                class="fa-solid fa-bars mr-2"></i>Danh mục sản phẩm</p>
+                        <a type="button" class="btn btn-danger btn-block" data-toggle="collapse" aria-expanded="false"
+                            href="#collapseMenu" style="font-weight: bold; font-size: 18px;"><i
+                                class="fa-solid fa-bars mr-2"></i>Danh mục sản phẩm</a>
                     </div>
-                    <ul class="list-group" style="cursor: pointer; font-weight: bold;">
-                        <li class="list-group-item dropdown">
-                            <div class="item-p dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-                                Điện thoại - Phụ kiện
-                            </div>
+                    <div id="collapseMenu"  class="collapse">
+                        <ul class="list-group" style="cursor: pointer; font-weight: bold;">
+                            <li class="list-group-item dropdown">
+                                <div class="item-p" data-toggle="dropdown">
+                                    Điện thoại - Phụ kiện
+                                </div>
 
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="phone.html">Samsung</a></li>
-                                <li><a class="dropdown-item" href="phone.html">oppo</a></li>
-                                <li><a class="dropdown-item" href="phone.html">Xiaomi</a></li>
-                            </ul>
-                        </li>
-                        <li class="list-group-item dropdown">
-                            <div class="item-p" data-toggle="dropdown">
-                                Máy tính - Laptop
-                            </div>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="">Lenovo</a></li>
-                                <li><a class="dropdown-item" href="">Dell</a></li>
-                                <li><a class="dropdown-item" href="">Asus</a></li>
-                            </ul>
-                        </li>
-                        <li class="list-group-item dropdown">
-                            <div class="item-p" data-toggle="dropdown">
-                                Thời trang
-                            </div>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="">Thời trang Nam</a></li>
-                                <li><a class="dropdown-item" href="">Thời trang Nữ</a></li>
-                            </ul>
-                        </li>
-                        <li class="list-group-item dropdown">
-                            <div class="item-p" data-toggle="dropdown">
-                                Mỹ phẩm chính hãng
-                            </div>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="">Nước hoa</a></li>
-                                <li><a class="dropdown-item" href="">Sữa dửa mặt</a></li>
-                            </ul>
-                        </li>
-                        <li class="list-group-item dropdown">
-                            <div class="item-p" data-toggle="dropdown">
-                                Thực phẩm sạch
-                            </div>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="">Bánh kẹo</a></li>
-                                <li><a class="dropdown-item" href="">Hoa quả</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                                <ul class="dropdown-menu w-100">
+                                    <li><a class="dropdown-item" href="all-product.html">Samsung</a></li>
+                                    <li><a class="dropdown-item" href="phone.html">oppo</a></li>
+                                    <li><a class="dropdown-item" href="phone.html">Xiaomi</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item dropdown">
+                                <div class="item-p" data-toggle="dropdown">
+                                    Máy tính - Laptop
+                                </div>
+                                <ul class="dropdown-menu w-100">
+                                    <li><a class="dropdown-item" href="">Lenovo</a></li>
+                                    <li><a class="dropdown-item" href="">Dell</a></li>
+                                    <li><a class="dropdown-item" href="">Asus</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item dropdown">
+                                <div class="item-p" data-toggle="dropdown">
+                                    Thời trang
+                                </div>
+                                <ul class="dropdown-menu w-100">
+                                    <li><a class="dropdown-item" href="">Thời trang Nam</a></li>
+                                    <li><a class="dropdown-item" href="">Thời trang Nữ</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item dropdown">
+                                <div class="item-p" data-toggle="dropdown">
+                                    Mỹ phẩm chính hãng
+                                </div>
+                                <ul class="dropdown-menu w-100">
+                                    <li><a class="dropdown-item" href="">Nước hoa</a></li>
+                                    <li><a class="dropdown-item" href="">Sữa dửa mặt</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item dropdown">
+                                <div class="item-p" data-toggle="dropdown">
+                                    Thực phẩm sạch
+                                </div>
+                                <ul class="dropdown-menu w-100">
+                                    <li><a class="dropdown-item" href="">Bánh kẹo</a></li>
+                                    <li><a class="dropdown-item" href="">Hoa quả</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-lg-9 col-xl-9">
                     <div class="row">
@@ -1007,10 +1011,8 @@
 
         <div class="copyright bg-warning">
             <div class="container">
-                <div class="row">
-                    <div class="link-copyright py-2">
-                        <a href=""><i class="fa-regular fa-copyright mr-2"></i>Copyright by Khuất Phú Công</a>
-                    </div>
+                <div class="link-copyright py-2">
+                    <a href=""><i class="fa-regular fa-copyright mr-2"></i>Copyright by Khuất Phú Công</a>
                 </div>
             </div>
         </div>
