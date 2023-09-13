@@ -7,6 +7,9 @@
 .container{
     max-width: 1230px !important;
 }
+.topheader a{
+    color: orange !important;
+}
 body{
     
     font-family: sans-serif;
@@ -34,13 +37,14 @@ p{
     .nav-link{
         font-size: 14px !important;
     }
-}
-
-@media screen and (max-width:992px) {
     .tin-noi-bat{
         display: none;
     }
+    .menu-filter-allproduct{
+        display: none;
+    }
 }
+
 @media screen and (max-width:768px) {
     .menu-phone{
         display: none;
@@ -209,7 +213,32 @@ p{
 }
 .click-img img{
     border: 1px solid rgba(128, 128, 128, 0.35);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .menu-hover li a:hover{
     background-color: rgb(255, 232, 203);
+}
+.menu-danhmuc-allproduct .menu a{
+    text-decoration: none;
+    color: black;
+}
+.menu-danhmuc-allproduct .menu a:hover{
+    color: orange;
+}
+.menu-danhmuc-allproduct, .menu-filter-allproduct{
+    border-top: 2px solid red;
+}
+.list-allproduct .title{
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.list-allproduct .product h5{
+    color: black;
+}
+.info-lienhe{
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 10px;
 }
