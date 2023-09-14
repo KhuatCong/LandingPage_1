@@ -1,131 +1,157 @@
-*{
+* {
     margin: 0px;
-    padding: 0px; 
+    padding: 0px;
     box-sizing: border-box !important;
-    
+
 }
-.container{
+
+.container {
     max-width: 1230px !important;
 }
-.topheader a{
+
+.topheader a {
     color: orange !important;
 }
-body{
-    
+
+body {
+
     font-family: sans-serif;
 }
-p{
+
+p {
     margin-bottom: 0px !important;
 }
-.hide p{
+
+.hide p {
     line-height: normal;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     background-color: rgb(255, 232, 203) !important;
 }
-.dropdown-menu a:hover{
+
+.dropdown-menu a:hover {
     background-color: rgb(250, 223, 190) !important;
 }
 
-@media screen and (max-width:1200px){
-    .hide{
+@media screen and (max-width:1200px) {
+    .hide {
         display: none;
     }
 }
 
 @media screen and (max-width:992px) {
-    .nav-link{
+    .nav-link {
         font-size: 14px !important;
     }
-    .tin-noi-bat{
+
+    .tin-noi-bat {
         display: none;
     }
-    .menu-filter-allproduct{
+
+    .menu-filter-allproduct {
         display: none;
     }
 }
 
 @media screen and (max-width:768px) {
-    .menu-phone{
+    .menu-phone {
         display: none;
     }
-    .right-phone-product{
+
+    .right-phone-product {
         display: none;
     }
 }
-.navbar .nav-link{
+
+.navbar .nav-link {
     color: white !important;
     font-size: 16px;
-    margin: 0px 4px ;
+    margin: 0px 4px;
     text-transform: uppercase;
 }
-.topcontact .nav-link{
+
+.topcontact .nav-link {
     padding: 0;
-    padding:0 6px;
+    padding: 0 6px;
     color: white;
 }
-.topcontact{
+
+.topcontact {
     background-color: rgba(128, 128, 128, 0.149);
 }
-#myslide li{
+
+#myslide li {
     list-style: none;
 }
 
-#myslide .list-group-item{
+#myslide .list-group-item {
     padding: 0 !important;
 }
-.item-p{
+
+.item-p {
     padding: 10px;
 }
-.salebody{
+
+.salebody {
     height: 80px;
 }
-.til{
+
+.til {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-.item-p:hover{
+
+.item-p:hover {
     background-color: blanchedalmond;
 }
-.sell-product h5{
+
+.sell-product h5 {
     color: black;
     font-weight: bold;
 }
-.left-phone-product h5{
+
+.left-phone-product h5 {
     color: black;
     font-weight: bold;
 }
-.menu-phone{
+
+.menu-phone {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     line-height: 40px;
 }
-.menu-phone li{
+
+.menu-phone li {
     float: right;
     margin: 0px 15px;
 }
-.menu-phone li a{
+
+.menu-phone li a {
     display: block;
     color: black;
     text-decoration: none;
 }
 
-.menu-phone li a:hover{
+.menu-phone li a:hover {
     color: orange;
 }
-.menu-bottom li{
+
+.menu-bottom li {
     list-style: none;
 }
-.menu-bottom li a{
+
+.menu-bottom li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
-.menu-bottom ul{
+
+.menu-bottom ul {
     margin-bottom: 0 !important;
     padding: 10px 0;
 }
@@ -135,110 +161,166 @@ p{
     border: 1px solid gray;
     margin: 10px;
 } */
-.thong-tin h6{
+.thong-tin h6 {
     color: red;
     font-weight: bold;
     text-transform: uppercase;
     margin: 20px 0px;
 }
-.content-footer li{
+
+.content-footer li {
     list-style: none;
     margin-bottom: 8px;
 }
-.content-footer li a{
+
+.content-footer li a {
     text-decoration: none;
     color: black;
     font-size: 14px;
 }
-.content-footer li a:hover{
+
+.content-footer li a:hover {
     color: orange;
 }
-.link-copyright a{
+
+.link-copyright a {
     color: white;
     text-decoration: none;
 }
-.breadcrumb{
+
+.breadcrumb {
     margin-bottom: 0 !important;
-    background-color:#F8F8FF !important;
+    background-color: #F8F8FF !important;
 }
-.breadcrumb li{
+
+.breadcrumb li {
     text-decoration: none;
 }
-.breadcrumb li a{
+
+.breadcrumb li a {
     color: black;
     font-weight: bold;
 }
-.menu-bottom li a:hover{
+
+.menu-bottom li a:hover {
     color: orange;
 }
-.thong-tin-san-pham h4{
+
+.thong-tin-san-pham h4 {
     border-bottom: 1px solid gray;
     padding-bottom: 5px;
     margin-bottom: 15px;
     font-weight: bold;
 }
-.ma-sp,.gia-sp{
+
+.ma-sp,
+.gia-sp {
     border-bottom: 1px solid gray;
     padding-bottom: 5px;
     margin-bottom: 15px;
     font-weight: bold;
 }
+
 .mota-sp {
     border-bottom: 1px solid gray;
     padding-bottom: 5px;
     margin-bottom: 15px;
     line-height: 30px;
 }
-.thong-tin-chi-tiet .nav-link{
+
+.thong-tin-chi-tiet .nav-link {
     color: black !important;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
 }
-.thong-tin-chi-tiet ul:first-child{
+
+.thong-tin-chi-tiet ul:first-child {
     background-color: #F8F8FF;
 }
-.thong-tin-chi-tiet{
+
+.thong-tin-chi-tiet {
     border: 1px solid #e6e6e6;
 }
-.dot::after{
+
+.dot::after {
     content: "*";
     color: red;
 }
 
-.tin-noi-bat .nav-item{
+.tin-noi-bat .nav-item {
     padding-top: 10px;
     margin-bottom: 10px;
     border-top: 1px solid rgba(128, 128, 128, 0.3);
 }
-.click-img img{
+
+.click-img img {
     border: 1px solid rgba(128, 128, 128, 0.35);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.menu-hover li a:hover{
+
+.menu-hover li a:hover {
     background-color: rgb(255, 232, 203);
 }
-.menu-danhmuc-allproduct .menu a{
+
+.menu-danhmuc-allproduct .menu a {
     text-decoration: none;
     color: black;
 }
-.menu-danhmuc-allproduct .menu a:hover{
+
+.menu-danhmuc-allproduct .menu a:hover {
     color: orange;
 }
-.menu-danhmuc-allproduct, .menu-filter-allproduct{
+
+.menu-danhmuc-allproduct,
+.menu-filter-allproduct {
     border-top: 2px solid red;
 }
-.list-allproduct .title{
+
+.list-allproduct .title {
     border-bottom: 1px solid gray;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
-.list-allproduct .product h5{
+
+.list-allproduct .product h5 {
     color: black;
 }
-.info-lienhe{
+
+.info-lienhe {
     border: 1px solid gray;
     padding: 10px;
     margin-bottom: 10px;
 }
+
+.title-hotro a {
+    color: black;
+    text-decoration: none;
+}
+
+.title-hotro a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+.item-tintuc {
+    border: 1px solid rgba(207, 207, 207, 0.551);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.title-tintuc a {
+    color: black;
+    font-weight: bold;
+}
+
+.title-tintuc a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+.item-huongdan h5 {
+    color: red;
+    font-weight: bold;
+}   

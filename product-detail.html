@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đặt hàng thành công</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="backtop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -16,12 +15,18 @@
 
     <style>
         body {
-            background-color: white !important;
+            background-color: #f8f8f8 !important;
         }
     </style>
+
+
+    <title>Sản phẩm</title>
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0"
+        nonce="ic2SV2ct"></script>
     <header class="header">
         <section id="myheader">
             <div class="topcontact py-2">
@@ -55,7 +60,7 @@
                         <div class="col-sm-4 col-lg-4 col-xl-4">
                             <a href="home.html"
                                 style="color: green; text-decoration: none; font-weight: bold; font-size: 36px;">
-                            <img src="img/logo/logo.png" width="50%" alt=""></a>
+                                <img src="img/logo/logo.png" width="50%" alt=""></a>
                         </div>
                         <div class="col-sm-8 col-lg-8 col-xl-4">
                             <div class="input-group">
@@ -110,7 +115,7 @@
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-md navbar-dark bg-warning">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
                 <div class="container">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -140,23 +145,182 @@
                         <button class="btn btn-outline-success mr-2">Register</button>
                         <a href="cart.html" type="button" class="btn btn-info"><i class="fa-solid fa-cart-shopping"
                                 style="color: white;"></i><span class="badge">7</span></a>
+
                     </div>
                 </div>
             </nav>
         </section>
     </header>
 
-    <div class="content">
+
+    <div class="content my-4">
         <div class="container">
-            <h1 class="text-center my-5">Đặt hàng thành công!</h1>
-            <div class="hanh-dong mb-5">
-                <div class="btn-pre mb-2">
-                    <a href="home.html" type="button" class="btn bg-success btn-block" style="color: white;"><i
-                            class="fa-solid fa-angles-left"></i> Tiếp tục mua hàng</a>
+            <div class="list-allproduct my-3">
+                <div class="title mb-3">
+                    <h5 class="text-uppercase font-weight-bold">Sản phẩm</h5>
+                    <ul class="breadcrumb bg-white">
+                        <li class="breadcrumb-item"><a href=""><a href="home.html"><i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li class="breadcrumb-item active">Danh mục con</li>
+                    </ul>
                 </div>
-                <div class="btn-ds">
-                    <a href="" type="button" class="btn bg-danger btn-block" style="color: white;">Xem danh sách đơn
-                        hàng <i class="fa-solid fa-angles-right"></i></a>
+            </div>
+            <div class="product-detail">
+                <div class="img-product-detail mb-5">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="click-image mb-4">
+                                <div class="img border mb-2 text-center bg-white"
+                                    style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                                    <img id="img" src="img/sell/sell1.jpg" alt="" width="80%">
+                                </div>
+                                <div class="click-img">
+                                    <img onclick="change(this)" src="img/sell/sell1.jpg" alt="" width="70">
+                                    <img onclick="change(this)" src="img/sell/sell2.png" alt="" width="70">
+                                    <img onclick="change(this)" src="img/sell/sell3.jpg" alt="" width="70">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <form action="cart.html">
+                                <div class="thong-tin-san-pham">
+                                    <div class="ten-sp">
+                                        <h4>Thông tin sản phẩm</h4>
+                                    </div>
+                                    <div class="ma-sp">
+                                        <p>Mã sản phẩm: SQ001</p>
+                                    </div>
+                                    <div class="gia-sp">
+                                        <p style="color: red;">Giá: 9.900.000 VNĐ</p>
+                                    </div>
+                                    <div class="mota-sp">
+                                        <p>Thông tin mô tả ngắn sản phẩm</p>
+                                        <p> - Chất liệu: Nhựa dẻo</p>
+                                        <p> - Xuất xứ: Việt Nam</p>
+                                        <p> - Bảo hành: 3 năm</p>
+                                    </div>
+                                </div>
+                                <div class="button-buy">
+                                    <button type="submit" class="btn btn-danger btn-block">Mua ngay</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="thong-tin-chi-tiet">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">Chi tiết sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">Bình luận</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content p-3" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3>Thông tin chi tiết sản phẩm</h3>
+                            <p class="mb-2">Ví dụ: Kệ tivi Flix 160D.KTV sử dụng gỗ tự nhiên 100% với những
+                                đường vân gỗ tự
+                                nhiên tôn lên sự sang trọng cho phòng khách. Thiết kế 2 hộc tủ lớn đặt hai bên
+                                kệ, ở giữa là 2 hộc kéo nhỏ hơn nằm sát nhau, được ngăn cách bởi sống giữa, phân
+                                kệ tivi thành 2 phần không gian đối xứng nhau.</p>
+                            <p class="mb-2">Tổng thể kệ tivi lại được liên kết với nhau bởi hậu kệ, tạo nên 2
+                                hộc mở tại
+                                trung tâm kệ, bạn có thể dùng để âm li & đầu máy. Đặc biệt, kệ tivi Flix
+                                160D.KTV sử dụng chân gỗ cao, có cấu trúc vát xéo hướng ra phía ngoài, tạo nên
+                                thế vững chắc, giúp kệ tivi có sức chịu lực hoàn hảo trong quá trình sử dụng.
+                            </p>
+                            <p style="font-weight: bold;">Thông tin cần biết:</p>
+                            <ul class="pl-5">
+                                <li>Sản phẩm đắt</li>
+                                <li>Hàng dễ vợ khi rơi</li>
+                            </ul>
+                            <p style="font-weight: bold;">Ưu điểm của sản phẩm:</p>
+                            <ul class="pl-5">
+                                <li>Kích thước nhỏ, nhẹ</li>
+                                <li>Dễ lắp đặt</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="fb-comments" data-href="https://hocwebchuan.com" data-width="100%"
+                                data-numposts="5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sanpham-lienquan my-4">
+                <div class="title">
+                    <h4 class="text-center font-weight-bold text-uppercase my-4">Sản phẩm liên quan</h4>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <div class="bg-white mb-4">
+                            <a href="" style="text-decoration: none;">
+                                <img class="card-img-top" src="img/sell/sell5.jpg" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title  text-truncate">Sản phẩm chính hãng số 1</h5>
+                                    <p style="color: red;">Giá: 6.900.000 VNĐ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <div class="bg-white mb-4">
+                            <a href="" style="text-decoration: none;">
+                                <img class="card-img-top" src="img/sell/sell5.jpg" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title  text-truncate">Sản phẩm chính hãng số 1</h5>
+                                    <p style="color: red;">Giá: 6.900.000 VNĐ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <div class="bg-white mb-4">
+                            <a href="" style="text-decoration: none;">
+                                <img class="card-img-top" src="img/sell/sell4.png" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title  text-truncate">Sản phẩm chính hãng số 1</h5>
+                                    <p style="color: red;">Giá: 6.900.000 VNĐ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <div class="bg-white mb-4">
+                            <a href="" style="text-decoration: none;">
+                                <img class="card-img-top" src="img/sell/sell5.jpg" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title  text-truncate">Sản phẩm chính hãng số 1</h5>
+                                    <p style="color: red;">Giá: 6.900.000 VNĐ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <div class="bg-white mb-4">
+                            <a href="" style="text-decoration: none;">
+                                <img class="card-img-top" src="img/sell/sell2.png" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title  text-truncate">Sản phẩm chính hãng số 1</h5>
+                                    <p style="color: red;">Giá: 6.900.000 VNĐ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <div class="bg-white mb-4">
+                            <a href="" style="text-decoration: none;">
+                                <img class="card-img-top" src="img/sell/sell3.jpg" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title  text-truncate">Sản phẩm chính hãng số 1</h5>
+                                    <p style="color: red;">Giá: 6.900.000 VNĐ</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -276,7 +440,6 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="main.js"></script>
-
 </body>
 
 </html>

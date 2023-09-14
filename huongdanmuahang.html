@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn mua hàng</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="backtop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -11,22 +12,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
-    <style>
-        body {
-            background-color: white !important;
-        }
-    </style>
-
-
-    <title>Sản phẩm</title>
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0"
-        nonce="ic2SV2ct"></script>
     <header class="header">
         <section id="myheader">
             <div class="topcontact py-2">
@@ -59,7 +47,8 @@
                     <div class="row d-flex align-items-center">
                         <div class="col-sm-4 col-lg-4 col-xl-4">
                             <a href="home.html"
-                                style="color: green; text-decoration: none; font-weight: bold; font-size: 36px;">Market</a>
+                                style="color: green; text-decoration: none; font-weight: bold; font-size: 36px;">
+                            <img src="img/logo/logo.png" width="50%" alt=""></a>
                         </div>
                         <div class="col-sm-8 col-lg-8 col-xl-4">
                             <div class="input-group">
@@ -114,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-md navbar-dark bg-warning">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
                 <div class="container">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -151,123 +140,76 @@
         </section>
     </header>
 
-
-    <div class="content my-4">
+    <div class="content">
         <div class="container">
-            <div class="product-title border-bottom border-warning d-flex flex-content-between mb-4">
-                <!-- <div class="title">
-                    <h4 style="font-weight: bold;">Sản phẩm</h4>
-                </div> -->
-                <div class="bread">
-                    <ul class="breadcrumb bg-white">
-                        <li class="breadcrumb-item"><a href="home.html"><i class="fa-solid fa-house"></i></a></li>
-                        <li class="breadcrumb-item"><a href="#">Danh mục</a></li>
-                        <li class="breadcrumb-item"><a href="">Danh mục con</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Tên sản phẩm</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="product-detail">
-                <div class="row">
-                    <div class="col-lg-9 mb-3">
-                        <div class="img-product-detail mb-5">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="click-image mb-4">
-                                        <div class="img border mb-2 text-center"
-                                            style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                                            <img id="img" src="img/sell/sell1.jpg" alt="" width="80%">
-                                        </div>
-                                        <div class="click-img">
-                                            <img onclick="change(this)" src="img/sell/sell1.jpg" alt="" width="70">
-                                            <img onclick="change(this)" src="img/sell/sell2.png" alt="" width="70">
-                                            <img onclick="change(this)" src="img/sell/sell3.jpg" alt="" width="70">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <form action="cart.html">
-                                        <div class="thong-tin-san-pham">
-                                            <div class="ten-sp">
-                                                <h4>Thông tin sản phẩm</h4>
-                                            </div>
-                                            <div class="ma-sp">
-                                                <p>Mã sản phẩm: SQ001</p>
-                                            </div>
-                                            <div class="gia-sp">
-                                                <p style="color: red;">Giá: 9.900.000 VNĐ</p>
-                                            </div>
-                                            <div class="mota-sp">
-                                                <p>Thông tin mô tả ngắn sản phẩm</p>
-                                                <p> - Chất liệu: Nhựa dẻo</p>
-                                                <p> - Xuất xứ: Việt Nam</p>
-                                                <p> - Bảo hành: 3 năm</p>
-                                            </div>
-                                        </div>
-                                        <div class="button-buy">
-                                            <button type="submit" class="btn btn-danger btn-block">Mua ngay</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="thong-tin-chi-tiet">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                        aria-controls="home" aria-selected="true">Chi tiết sản phẩm</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                        aria-controls="profile" aria-selected="false">Bình luận</a>
-                                </li>
+            <div class="row">
+
+                <div class="col-lg-8 col-xl-9">
+                    <div class="list-allproduct my-3">
+                        <div class="title mb-3">
+                            <h5 class="text-uppercase font-weight-bold">Hướng dẫn mua hàng</h5>
+                            <ul class="breadcrumb bg-white">
+                                <li class="breadcrumb-item"><a href=""><a href="home.html"><i
+                                                class="fa-solid fa-house"></i></a></li>
+                                <li class="breadcrumb-item active">Danh mục con</li>
                             </ul>
-                            <div class="tab-content p-3" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel"
-                                    aria-labelledby="home-tab">
-                                    <h3>Thông tin chi tiết sản phẩm</h3>
-                                    <p class="mb-2">Ví dụ: Kệ tivi Flix 160D.KTV sử dụng gỗ tự nhiên 100% với những
-                                        đường vân gỗ tự
-                                        nhiên tôn lên sự sang trọng cho phòng khách. Thiết kế 2 hộc tủ lớn đặt hai bên
-                                        kệ, ở giữa là 2 hộc kéo nhỏ hơn nằm sát nhau, được ngăn cách bởi sống giữa, phân
-                                        kệ tivi thành 2 phần không gian đối xứng nhau.</p>
-                                    <p class="mb-2">Tổng thể kệ tivi lại được liên kết với nhau bởi hậu kệ, tạo nên 2
-                                        hộc mở tại
-                                        trung tâm kệ, bạn có thể dùng để âm li & đầu máy. Đặc biệt, kệ tivi Flix
-                                        160D.KTV sử dụng chân gỗ cao, có cấu trúc vát xéo hướng ra phía ngoài, tạo nên
-                                        thế vững chắc, giúp kệ tivi có sức chịu lực hoàn hảo trong quá trình sử dụng.
-                                    </p>
-                                    <p style="font-weight: bold;">Thông tin cần biết:</p>
-                                    <ul class="pl-5">
-                                        <li>Sản phẩm đắt</li>
-                                        <li>Hàng dễ vợ khi rơi</li>
-                                    </ul>
-                                    <p style="font-weight: bold;">Ưu điểm của sản phẩm:</p>
-                                    <ul class="pl-5">
-                                        <li>Kích thước nhỏ, nhẹ</li>
-                                        <li>Dễ lắp đặt</li>
-                                    </ul>
-                                </div>
-                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                    <div class="fb-comments" data-href="https://hocwebchuan.com" data-width="100%"
-                                        data-numposts="5"></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="too-product border border-warning">
-                            <div class="text-center bg-warning p-2 text-white text-uppercase font-weight-bold">
-                                Sản phẩm liên quan
-                            </div>
-
+                    <div class="list-huongdan mb-4">
+                        <div class="item-huongdan mb-4">
+                            <h5>I. Hướng dẫn mua hàng trực tuyến</h5>
+                            <p class="mb-2"><strong>Bước 1: </strong>Truy cập vào website. Sau đó tìm kiếm sản phẩm cần
+                                mua</p>
+                            <p class="mb-2"><strong>Bước 2: </strong>Tại trang chi tiết sản phẩm, quý khách chọn và bấm
+                                nút <span style="color: blue;">Mua ngay</span> nếu muốn
+                                mua luôn sản phẩm. Trong trường hợp quý khách muốn mua tiếp chỉ cần thêm vào giỏ
+                                hàng, và lựa chọn các sản phẩm khác. Tại giỏ hàng, quý khách có thể xem lại danh
+                                sách các sản phẩm có trong giỏ hàng.</p>
+                            <p class="mb-2">
+                                <strong>Bước 3: </strong>Chọn phương thức thanh toán
+                            </p>
+                            <p class="mb-2">
+                                <strong>Bước 4: </strong>Click <span style="color: blue;">Đặt hàng</span> để hoàn tất
+                                quá trình mua hàng
+                            </p>
                         </div>
+                        <div class="item-huongdan">
+                            <h5>II. Hướng dẫn mua hàng trực tiếp</h5>
+                            <p class="mb-2 font-weight-bold">Quý hách vui lòng đến tại địa chỉ:</p>
+                            <p class="mb-2">Địa chỉ: Thôn 1, Xã Phúc Hòa, Huyện Phúc Thọ, TP Hà Nội</p>
+                            <p class="mb-2">Điện thoại: 0366332897</p>
+                            <p>Email: khuatphucong06092002@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-3">
+                    <div class="menu-filter-allproduct my-3 border">
+                        <div class="title bg-warning py-2 font-weight-bold text-white text-center text-uppercase"
+                            style="font-size: 16px;">
+                            Hỗ trợ trực tuyến
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="img-hotro">
+                                    <img src="img/hotro.png" alt="" width="100%">
+                                </div>
+                                <div class="hotro mb-3">
+                                    <div class="phone-hotro mt-3">
+                                        <i class="fa-solid fa-phone-volume mr-2"></i><span
+                                            style="color: red; font-weight: bold;">0366332897</span>
+                                    </div>
+                                    <div class="title-hotro">
+                                        <i class="fa-brands fa-facebook mr-2"></i><a
+                                            href="https://www.facebook.com/khuatphucong.02">Chăm sóc khách hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <footer class="footer">
         <section class="menu-bottom">
@@ -361,10 +303,8 @@
 
         <div class="copyright bg-warning">
             <div class="container">
-                <div class="row">
-                    <div class="link-copyright py-2">
-                        <a href=""><i class="fa-regular fa-copyright mr-2"></i>Copyright by Khuất Phú Công</a>
-                    </div>
+                <div class="link-copyright py-2">
+                    <a href=""><i class="fa-regular fa-copyright mr-2"></i>Copyright by Khuất Phú Công</a>
                 </div>
             </div>
         </div>
