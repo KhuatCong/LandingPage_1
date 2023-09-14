@@ -4,37 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tất cả sản phẩm</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="backtop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 
     <style>
         body {
-            background-color: #f8f8f8 !important;
+            background-color: white !important;
         }
     </style>
-
-
-    <title>Sản phẩm</title>
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0"
-        nonce="ic2SV2ct"></script>
     <header class="header">
         <section id="myheader">
             <div class="topcontact py-2">
                 <div class="container">
                     <div class="row">
                         <div class="col d-flex align-items-center">
-                            <i class="fa-solid fa-phone-volume mr-2"></i>
+                            <i class="fa-solid fa-phone-volume me-2"></i>
                             Hotline: <strong>0366332897</strong>
                         </div>
                         <div class="col d-flex justify-content-end">
@@ -116,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+            <nav class="navbar navbar-expand-md navbar-dark bg-warning">
                 <div class="container">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -125,7 +119,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- <a class="navbar-brand" href="#"><i class="fa-solid fa-bars mr-2"></i>Danh mục sản phẩm</a> -->
-                        <ul class="navbar-nav mr-auto">
+                        <ul class="navbar-nav me-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="home.html">Trang chủ</a>
                             </li>
@@ -142,8 +136,8 @@
                                 <a class="nav-link" href="#">Hướng dẫn mua hàng</a>
                             </li>
                         </ul>
-                        <button class="btn btn-danger mr-2">Login</button>
-                        <button class="btn btn-outline-success mr-2">Register</button>
+                        <button class="btn btn-danger me-2">Login</button>
+                        <button class="btn btn-outline-success me-2">Register</button>
                         <a href="cart.html" type="button" class="btn btn-info"><i class="fa-solid fa-cart-shopping"
                                 style="color: white;"></i><span class="badge">7</span></a>
 
@@ -153,182 +147,77 @@
         </section>
     </header>
 
-
-    <div class="content my-4">
+    <div class="content" style="background-color: #f8f8f8;">
         <div class="container">
-            <div class="list-allproduct my-3">
-                <div class="title mb-3">
-                    <h5 class="text-uppercase font-weight-bold">Sản phẩm</h5>
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href=""><a href="home.html"><i class="fa-solid fa-house"></i></a>
-                        </li>
-                        <li class="breadcrumb-item active">Danh mục con</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="product-detail">
-                <div class="img-product-detail mb-5">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="click-image mb-4">
-                                <div class="img border mb-2 text-center bg-white"
-                                    style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                                    <img id="img" src="img/sell/sell1.jpg" alt="" width="80%">
-                                </div>
-                                <div class="click-img">
-                                    <img onclick="change(this)" src="img/sell/sell1.jpg" alt="" width="100">
-                                    <img onclick="change(this)" src="img/sell/sell2.png" alt="" width="100">
-                                    <img onclick="change(this)" src="img/sell/sell3.jpg" alt="" width="100">
-                                </div>
-                            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="menu-danhmuc-allproduct my-3">
+                        <div data-toggle="collapse" data-target="#menu-all"
+                            class="dropdown-toggle title bg-warning py-2 font-weight-bold text-white text-center text-uppercase"
+                            style="font-size: 16px;">
+                            Danh mục
                         </div>
-                        <div class="col-lg-6">
-                            <form action="cart.html">
-                                <div class="thong-tin-san-pham">
-                                    <div class="ten-sp">
-                                        <h4>Thông tin sản phẩm</h4>
-                                    </div>
-                                    <div class="ma-sp">
-                                        <p>Mã sản phẩm: SQ001</p>
-                                    </div>
-                                    <div class="gia-sp">
-                                        <p style="color: red;">Giá: 9.900.000 VNĐ</p>
-                                    </div>
-                                    <div class="mota-sp">
-                                        <p>Thông tin mô tả ngắn sản phẩm</p>
-                                        <p> - Chất liệu: Nhựa dẻo</p>
-                                        <p> - Xuất xứ: Việt Nam</p>
-                                        <p> - Bảo hành: 3 năm</p>
-                                    </div>
-                                </div>
-                                <div class="button-buy">
-                                    <button type="submit" class="btn btn-danger btn-block">Mua ngay</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="thong-tin-chi-tiet">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                aria-controls="home" aria-selected="true">Chi tiết sản phẩm</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                aria-controls="profile" aria-selected="false">Bình luận</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content p-3" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <h3>Thông tin chi tiết sản phẩm</h3>
-                            <p class="mb-2">Ví dụ: Kệ tivi Flix 160D.KTV sử dụng gỗ tự nhiên 100% với những
-                                đường vân gỗ tự
-                                nhiên tôn lên sự sang trọng cho phòng khách. Thiết kế 2 hộc tủ lớn đặt hai bên
-                                kệ, ở giữa là 2 hộc kéo nhỏ hơn nằm sát nhau, được ngăn cách bởi sống giữa, phân
-                                kệ tivi thành 2 phần không gian đối xứng nhau.</p>
-                            <p class="mb-2">Tổng thể kệ tivi lại được liên kết với nhau bởi hậu kệ, tạo nên 2
-                                hộc mở tại
-                                trung tâm kệ, bạn có thể dùng để âm li & đầu máy. Đặc biệt, kệ tivi Flix
-                                160D.KTV sử dụng chân gỗ cao, có cấu trúc vát xéo hướng ra phía ngoài, tạo nên
-                                thế vững chắc, giúp kệ tivi có sức chịu lực hoàn hảo trong quá trình sử dụng.
-                            </p>
-                            <p style="font-weight: bold;">Thông tin cần biết:</p>
-                            <ul class="pl-5">
-                                <li>Sản phẩm đắt</li>
-                                <li>Hàng dễ vợ khi rơi</li>
-                            </ul>
-                            <p style="font-weight: bold;">Ưu điểm của sản phẩm:</p>
-                            <ul class="pl-5">
-                                <li>Kích thước nhỏ, nhẹ</li>
-                                <li>Dễ lắp đặt</li>
+                        <div id="menu-all" class="menu collapse show">
+                            <ul class="list-group">
+                                <!-- <li class="list-group-item bg-warning text-center">Danh mục</li> -->
+                                <li class="list-group-item"><a href=""><i
+                                            class="fa-regular fa-square-plus mr-2"></i>Điện thoại - Phụ kiện</a></li>
+                                <li class="list-group-item"><a href=""><i class="fa-regular fa-square-plus mr-2"></i>Máy
+                                        tính - Laptop</a></li>
+                                <li class="list-group-item"><a href=""><i
+                                            class="fa-regular fa-square-plus mr-2"></i>Thời trang nam nữ</a></li>
+                                <li class="list-group-item"><a href=""><i class="fa-regular fa-square-plus mr-2"></i>Mỹ
+                                        phẩm chính hãng</a></li>
+                                <li class="list-group-item"><a href=""><i
+                                            class="fa-regular fa-square-plus mr-2"></i>Thực phẩm sạch</a></li>
                             </ul>
                         </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <div class="fb-comments" data-href="https://hocwebchuan.com" data-width="100%"
-                                data-numposts="5"></div>
+                    </div>
+                    <div class="menu-filter-allproduct">
+                        <div class="title bg-warning py-2 font-weight-bold text-white text-center text-uppercase"
+                            style="font-size: 16px;">
+                            Hỗ trợ trực tuyến
                         </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="img-hotro">
+                                    <img src="img/hotro.png" alt="" width="100%">
+                                </div>
+                                <div class="hotro mb-3">
+                                    <div class="phone-hotro mt-3">
+                                        <i class="fa-solid fa-phone-volume mr-2"></i><span
+                                            style="color: red; font-weight: bold;">0366332897</span>
+                                    </div>
+                                    <div class="title-hotro">
+                                        <i class="fa-brands fa-skype mr-2"></i>Chăm sóc khách hàng
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-
-            <div class="sanpham-lienquan my-4 text-center">
-                <div class="title">
-                    <h4 class="text-center font-weight-bold text-uppercase my-4">Sản phẩm liên quan</h4>
-                </div>
-                <div class="owl-carousel owl-theme text-center">
-                    <div class="card">
-                        <a href="product-detail.html" style="text-decoration: none;">
-                            <img class="card-img-top" src="img/sell/sell1.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title  text-truncate">Sản phẩm chính hãng số 1</h5>
-                                <p style="color: red;">Giá: 6.900.000 VNĐ</p>
+                <div class="col-lg-9">
+                    <div class="list-allproduct my-3">
+                        <div class="title mb-3">
+                            <h4 class="text-uppercase font-weight-bold">Danh mục</h4>
+                            <ul class="breadcrumb bg-white">
+                                <li class="breadcrumb-item"><a href=""><a href="home.html"><i
+                                                class="fa-solid fa-house"></i></a></li>
+                                <li class="breadcrumb-item active">Danh mục con</li>
+                            </ul>
+                        </div>
+                        <div class="title-module mb-3">
+                            Tìm thấy <span style="color: red;">100</span> sản phẩm
+                        </div>
+                        <div class="product">
+                            <div class="row row-cols-4 row-gutter-2">
+                                <div class="col border" style="height: 50px;">col</div>
+                                <div class="col border" style="height: 50px;">col</div>
+                                <div class="col border" style="height: 50px;">col</div>
+                                <div class="col border" style="height: 50px;">col</div>
+                                <div class="col border" style="height: 50px;">col</div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="product-detail.html" style="text-decoration: none;">
-                            <img class="card-img-top" src="img/sell/sell2.png" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Sản phẩm 2</h5>
-                                <p style="color: red;">Giá: 6.900.000 VNĐ</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="product-detail.html" style="text-decoration: none;">
-                            <img class="card-img-top" src="img/sell/sell3.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Sản phẩm 3</h5>
-                                <p style="color: red;">Giá: 6.900.000 VNĐ</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="product-detail.html" style="text-decoration: none;">
-                            <img class="card-img-top" src="img/sell/sell4.png" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Sản phẩm 4</h5>
-                                <p style="color: red;">Giá: 6.900.000 VNĐ</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="product-detail.html" style="text-decoration: none;">
-                            <img class="card-img-top" src="img/sell/sell1.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Điện thoại 1</h5>
-                                <p style="color: red;">Giá: 6.900.000 VNĐ</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="product-detail.html" style="text-decoration: none;">
-                            <img class="card-img-top" src="img/sell/sell6.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Điện thoại 1</h5>
-                                <p style="color: red;">Giá: 6.900.000 VNĐ</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="product-detail.html" style="text-decoration: none;">
-                            <img class="card-img-top" src="img/sell/sell7.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Điện thoại 1</h5>
-                                <p style="color: red;">Giá: 6.900.000 VNĐ</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="product-detail.html" style="text-decoration: none;">
-                            <img class="card-img-top" src="img/sell/sell8.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Điện thoại 1</h5>
-                                <p style="color: red;">Giá: 6.900.000 VNĐ</p>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -428,10 +317,8 @@
 
         <div class="copyright bg-warning">
             <div class="container">
-                <div class="row">
-                    <div class="link-copyright py-2">
-                        <a href=""><i class="fa-regular fa-copyright mr-2"></i>Copyright by Khuất Phú Công</a>
-                    </div>
+                <div class="link-copyright py-2">
+                    <a href=""><i class="fa-regular fa-copyright mr-2"></i>Copyright by Khuất Phú Công</a>
                 </div>
             </div>
         </div>
@@ -442,14 +329,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src="main.js"></script>
-    <script src="owl/owl.carousel.min.js"></script>
+
 </body>
 
 </html>

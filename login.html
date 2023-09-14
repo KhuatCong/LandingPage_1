@@ -15,7 +15,7 @@
 
 
     <style>
-        
+
     </style>
 </head>
 
@@ -61,8 +61,13 @@
 
     <div class="content">
         <div class="container">
-            <h1 class="text-center my-3 text-uppercase" style="font-weight: bold; color: orange; font-size: 60px;">
-                Market</h1>
+            <div class="text-center my-3 text-uppercase" style="font-weight: bold; color: orange; font-size: 60px;">
+                <div class="col-sm-6 offset-sm-3 col-md-4 offset-md-4">
+                    <a href="home.html"
+                        style="color: green; text-decoration: none; font-weight: bold; font-size: 36px;">
+                        <img src="img/logo/logo.png" width="100%" alt=""></a>
+                </div>
+            </div>
             <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
                 <div class="border p-4 mb-4">
                     <form action="" class="">
@@ -77,7 +82,8 @@
                         <button type="submit" class="btn btn-success btn-block text-uppercase">Đăng nhập</button>
                         <hr>
                         <div class="link-res">
-                            <a style="text-decoration: none;" href="">Quên mật khẩu?</a>
+                            <a style="text-decoration: none;" href="#exampleModal" data-toggle="modal">Quên mật
+                                khẩu?</a>
                             <a style="text-decoration: none; float: right;" href="register.html">Đăng ký
                                 ngay</a>
                         </div>
@@ -95,6 +101,29 @@
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+
+            <div class="popup-matkhau">
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-success">
+                                <h5 class="modal-title" id="exampleModalLabel">Quên mật khẩu</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <form action="" class="form-control">
+                                <div class="form-group mt-3">
+                                    <input type="email" class="form-control" id="inputEmail4"
+                                        placeholder="Nhập mật khẩu bạn đã quên">
+                                </div>
+                                <button type="submit" class="btn btn-success btn-block mb-3">Cấp lại mật khẩu</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

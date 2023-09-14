@@ -41,21 +41,27 @@ $(document).ready(function () {
             }
         }
     });
-//     var owl = $('.owl-carousel');
-//     owl.on('mousewheel', '.owl-stage', function (e) {
-//         if (e.deltaY > 0) {
-//             owl.trigger('next.owl');
-//         } else {
-//             owl.trigger('prev.owl');
-//         }
-//         e.preventDefault();
-//     });
+    //     var owl = $('.owl-carousel');
+    //     owl.on('mousewheel', '.owl-stage', function (e) {
+    //         if (e.deltaY > 0) {
+    //             owl.trigger('next.owl');
+    //         } else {
+    //             owl.trigger('prev.owl');
+    //         }
+    //         e.preventDefault();
+    //     });
 })
 
 // alert('Về "Trang chủ" để sử dụng tất cả chức năng');
 
-function change(image){
+function change(image) {
     var content = document.getElementById('img');
 
     content.src = image.src;
-}
+};
+
+
+AOS.init({
+    duration: 1000,
+    once: true,
+});
