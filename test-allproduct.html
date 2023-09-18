@@ -5,335 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tất cả sản phẩm</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="backtop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-
-    <style>
-        body {
-            background-color: white !important;
-        }
-    </style>
 </head>
 
 <body>
-    <header class="header">
-        <section id="myheader">
-            <div class="topcontact py-2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col d-flex align-items-center">
-                            <i class="fa-solid fa-phone-volume me-2"></i>
-                            Hotline: <strong>0366332897</strong>
-                        </div>
-                        <div class="col d-flex justify-content-end">
-                            <ul class="nav">
-                                <li class="nav-item"><a class="nav-link" href=""><i
-                                            class="fa-brands fa-facebook"></i></a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href=""><i class="fa-brands fa-google"></i></a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href=""><i
-                                            class="fa-brands fa-youtube"></i></a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href=""><i
-                                            class="fa-brands fa-twitter"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="topheader py-4 ">
-                <div class="container">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-sm-4 col-lg-4 col-xl-4">
-                            <a href="home.html"
-                                style="color: green; text-decoration: none; font-weight: bold; font-size: 36px;">
-                                <img src="img/logo/logo.png" width="50%" alt=""></a>
-                        </div>
-                        <div class="col-sm-8 col-lg-8 col-xl-4">
-                            <div class="input-group">
-                                <input type="text" class="form-control border-warning" placeholder="Tìm kiếm ...">
-                                <div class="input-group-append">
-                                    <button class="btn btn-warning text-light">
-                                        <i class="fa-solid fa-magnifying-glass mr-1"></i>
-                                        Tìm kiếm
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 ">
-                            <div class="hide">
-                                <div class="row">
-                                    <div class="col-md">
-                                        <div class="row d-flex align-items-center">
-                                            <div class="col-md-3">
-                                                <i class="fa-solid fa-truck text-warning fa-xl"></i>
-                                            </div>
-                                            <div class="col-md-9" style="font-size: 12px;">
-                                                <p>Giao hàng</p>
-                                                <p><strong>Miễn phí</strong></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md">
-                                        <div class="row d-flex align-items-center">
-                                            <div class="col-md-3">
-                                                <i class="fa-regular fa-circle-check text-warning fa-xl"></i>
-                                            </div>
-                                            <div class="col-md-9" style="font-size: 12px;">
-                                                <p>Bảo hành</p>
-                                                <p><strong>1 năm</strong></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md">
-                                        <div class="row d-flex align-items-center">
-                                            <div class="col-md-3">
-                                                <i class="fa-solid fa-shield text-warning fa-xl"></i>
-                                            </div>
-                                            <div class="col-md-9" style="font-size: 12px;">
-                                                <p>Sản phẩm</p>
-                                                <p><strong>chất lượng</strong></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <nav class="navbar navbar-expand-md navbar-dark bg-warning">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- <a class="navbar-brand" href="#"><i class="fa-solid fa-bars mr-2"></i>Danh mục sản phẩm</a> -->
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="home.html">Trang chủ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Giới thiệu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Liên hệ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Hỗ trợ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Hướng dẫn mua hàng</a>
-                            </li>
-                        </ul>
-                        <button class="btn btn-danger me-2">Login</button>
-                        <button class="btn btn-outline-success me-2">Register</button>
-                        <a href="cart.html" type="button" class="btn btn-info"><i class="fa-solid fa-cart-shopping"
-                                style="color: white;"></i><span class="badge">7</span></a>
 
-                    </div>
-                </div>
-            </nav>
-        </section>
-    </header>
-
-    <div class="content" style="background-color: #f8f8f8;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="menu-danhmuc-allproduct my-3">
-                        <div data-toggle="collapse" data-target="#menu-all"
-                            class="dropdown-toggle title bg-warning py-2 font-weight-bold text-white text-center text-uppercase"
-                            style="font-size: 16px;">
-                            Danh mục
-                        </div>
-                        <div id="menu-all" class="menu collapse show">
-                            <ul class="list-group">
-                                <!-- <li class="list-group-item bg-warning text-center">Danh mục</li> -->
-                                <li class="list-group-item"><a href=""><i
-                                            class="fa-regular fa-square-plus mr-2"></i>Điện thoại - Phụ kiện</a></li>
-                                <li class="list-group-item"><a href=""><i class="fa-regular fa-square-plus mr-2"></i>Máy
-                                        tính - Laptop</a></li>
-                                <li class="list-group-item"><a href=""><i
-                                            class="fa-regular fa-square-plus mr-2"></i>Thời trang nam nữ</a></li>
-                                <li class="list-group-item"><a href=""><i class="fa-regular fa-square-plus mr-2"></i>Mỹ
-                                        phẩm chính hãng</a></li>
-                                <li class="list-group-item"><a href=""><i
-                                            class="fa-regular fa-square-plus mr-2"></i>Thực phẩm sạch</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="menu-filter-allproduct">
-                        <div class="title bg-warning py-2 font-weight-bold text-white text-center text-uppercase"
-                            style="font-size: 16px;">
-                            Hỗ trợ trực tuyến
-                        </div>
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                <div class="img-hotro">
-                                    <img src="img/hotro.png" alt="" width="100%">
-                                </div>
-                                <div class="hotro mb-3">
-                                    <div class="phone-hotro mt-3">
-                                        <i class="fa-solid fa-phone-volume mr-2"></i><span
-                                            style="color: red; font-weight: bold;">0366332897</span>
-                                    </div>
-                                    <div class="title-hotro">
-                                        <i class="fa-brands fa-skype mr-2"></i>Chăm sóc khách hàng
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="list-allproduct my-3">
-                        <div class="title mb-3">
-                            <h4 class="text-uppercase font-weight-bold">Danh mục</h4>
-                            <ul class="breadcrumb bg-white">
-                                <li class="breadcrumb-item"><a href=""><a href="home.html"><i
-                                                class="fa-solid fa-house"></i></a></li>
-                                <li class="breadcrumb-item active">Danh mục con</li>
-                            </ul>
-                        </div>
-                        <div class="title-module mb-3">
-                            Tìm thấy <span style="color: red;">100</span> sản phẩm
-                        </div>
-                        <div class="product">
-                            <div class="row row-cols-4 row-gutter-2">
-                                <div class="col border" style="height: 50px;">col</div>
-                                <div class="col border" style="height: 50px;">col</div>
-                                <div class="col border" style="height: 50px;">col</div>
-                                <div class="col border" style="height: 50px;">col</div>
-                                <div class="col border" style="height: 50px;">col</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-
-    <footer class="footer">
-        <section class="menu-bottom">
-            <div class="menu border-top border-bottom border-warning" style="background-color: white;">
-                <ul class="d-flex flex-wrap justify-content-center align-items-center">
-                    <li><a href="">Điện thoại - phụ kiện</a></li>
-                    <span class="mx-2">|</span>
-                    <li><a href="">Máy tính - laptop</a></li>
-                    <span class="mx-2">|</span>
-                    <li><a href="">Mỹ phẩm chính hãng</a></li>
-                    <span class="mx-2">|</span>
-                    <li><a href="">Thời trang nam nữ</a></li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
                 </ul>
-            </div>
-        </section>
-        <section id="myfooter">
-            <div class="bg-white py-4">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <div class="thong-tin">
-                                        <h6>Về chúng tôi</h6>
-                                        <div class="content-footer">
-                                            <ul>
-                                                <li><a href="" title="Tuyển dụng">Tuyển dụng</a></li>
-                                                <li><a href="">Khuyến mãi</a></li>
-                                                <li><a href="">Góp ý</a></li>
-                                                <li><a href="">Trả góp</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-5">
-                                    <div class="thong-tin">
-                                        <h6>Quy định - chính sách</h6>
-                                        <div class="content-footer">
-                                            <ul>
-                                                <li><a href="">Chính sách bảo hành</a></li>
-                                                <li><a href="">Chính sách đổi trả</a></li>
-                                                <li><a href="">Chính sách sửa chữa</a></li>
-                                                <li><a href="">Chính sách bảo mật</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="thong-tin">
-                                        <h6>Hỗ trợ khách hàng</h6>
-                                        <div class="content-footer">
-                                            <ul>
-                                                <li><a href="">Hướng dẫn mua hàng</a></li>
-                                                <li><a href="">Giao hàng và nhận hàng</a></li>
-                                                <li><a href="">Hướng dẫn thanh toán</a></li>
-                                                <li><a href="">Câu hỏi thường gặp</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="thong-tin">
-                                        <h6>Thông tin liên hệ</h6>
-                                        <div class="content-footer">
-                                            <ul>
-                                                <li><a href="">Địa chỉ: Thôn 1, Phúc Hòa, Phúc Thọ, Hà Nội</a></li>
-                                                <li><a href="">Điện thoại: 0366332897</a></li>
-                                                <li><a href="">Email: khuatphucong02@gmail.com</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="thong-tin">
-                                        <h6>Thanh toán online</h6>
-                                        <div class="content-footer">
-                                            <img src="img/thanh-toan.png" style="width: auto;" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="copyright bg-warning">
-            <div class="container">
-                <div class="link-copyright py-2">
-                    <a href=""><i class="fa-regular fa-copyright mr-2"></i>Copyright by Khuất Phú Công</a>
-                </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
             </div>
         </div>
-    </footer>
+    </nav>
 
     <div id="back-to-top" title="Back to Top">&Hat;</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="main.js"></script>
 

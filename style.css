@@ -361,3 +361,7 @@ del{
     color: black;
     opacity: 0.3;
 }
+.mynavbar{
+    position: sticky;
+    top: 0;
+}
