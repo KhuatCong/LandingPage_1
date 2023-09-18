@@ -57,7 +57,7 @@
                         <div class="col-sm-4 col-lg-4 col-xl-4">
                             <a href="home.html"
                                 style="color: green; text-decoration: none; font-weight: bold; font-size: 36px;">
-                            <img src="img/logo/logo.png" width="50%" alt=""></a>
+                                <img src="img/logo/logo.png" width="50%" alt=""></a>
                         </div>
                         <div class="col-sm-8 col-lg-8 col-xl-4">
                             <div class="input-group">
@@ -120,8 +120,6 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- <a class="navbar-brand" href="#"><i class="fa-solid fa-bars mr-2"></i>Danh mục sản phẩm</a> -->
-
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
                                 <a style="text-transform: uppercase;" class="nav-link" href="home.html">Trang chủ</a>
@@ -137,15 +135,27 @@
                                 <a style="text-transform: uppercase;" class="nav-link" href="tintuc.html">Tin tức</a>
                             </li>
                             <li class="nav-item">
-                                <a style="text-transform: uppercase;" class="nav-link" href="huongdanmuahang.html">Hướng dẫn
+                                <a style="text-transform: uppercase;" class="nav-link" href="huongdanmuahang.html">Hướng
+                                    dẫn
                                     mua hàng</a>
                             </li>
                         </ul>
-                        <a href="login.html" class="btn btn-danger mr-2">Login</a>
-                        <a href="register.html" class="btn btn-outline-success mr-2">Register</a>
-                        <a href="cart.html" type="button" class="btn btn-info"><i class="fa-solid fa-cart-shopping"
-                                style="color: white;"></i><span class="badge">7</span>
-                        </a>
+
+                        <div class="dropdown">
+                            <div class="avatar mr-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-regular fa-circle-user fa-2xl"></i>
+                            </div>
+                            <div class="dropdown-menu">
+                                <a href="login.html" class="dropdown-item">Login</a>
+                                <a href="taikhoan.html" class="dropdown-item">Tài khoản</a>
+                            </div>
+                        </div>
+
+                        <div class="card-home">
+                            <a href="cart.html" type="button" class="btn btn-info"><i class="fa-solid fa-cart-shopping"
+                                    style="color: white;"></i><span class="badge">7</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -157,9 +167,9 @@
             <div class="row">
                 <div class="col-lg-3 col-xl-3 mt-2">
                     <div class="topmenu bg-danger">
-                        <a type="button" class="btn btn-danger btn-block text-left" data-toggle="collapse" aria-expanded="false"
+                        <span class="btn btn-danger btn-block text-left" data-toggle="collapse" aria-expanded="false"
                             href="#collapseMenu" style="font-weight: bold; font-size: 18px;">
-                            <i class="fa-solid fa-bars mr-2"></i>Danh mục sản phẩm</a>
+                            <i class="fa-solid fa-bars mr-2"></i>Danh mục sản phẩm</span>
                     </div>
                     <div id="collapseMenu" class="collapse show border">
                         <ul class="list-group list-group-flush" style="cursor: pointer; font-weight: bold;">
@@ -174,7 +184,7 @@
                                 </div>
 
                                 <ul id="phone-list" class="menu-hover collapse w-100" data-parent="#collapseMenu">
-                                    <li><a class="dropdown-item" href="all-product.html">Samsung</a></li>
+                                    <li><a class="dropdown-item" href="phone.html">Samsung</a></li>
                                     <li><a class="dropdown-item" href="phone.html">oppo</a></li>
                                     <li><a class="dropdown-item" href="phone.html">Xiaomi</a></li>
                                 </ul>
@@ -190,7 +200,7 @@
                                 </ul>
                             </li>
                             <li class="list-group-item">
-                                <div class="item-p" data-toggle="collapse" data-target="#thoitrang-list"> 
+                                <div class="item-p" data-toggle="collapse" data-target="#thoitrang-list">
                                     Thời trang
                                 </div>
                                 <ul class="collapse w-100 menu-hover" id="thoitrang-list" data-parent="#collapseMenu">
@@ -306,7 +316,7 @@
                                             <div class="col-7">
                                                 <div class="til">
                                                     <a style="text-decoration: none; color: black; font-weight: bold;"
-                                                        href="">Gần 770 triệu email và hơn 21
+                                                        href="tintuc-detail.html">Gần 770 triệu email và hơn 21
                                                         triệu mật khẩu bị rò rỉ</a>
                                                 </div>
                                                 <p style="font-size: 12px;">Thứ hai, ngày 20/09/2022</p>
@@ -321,7 +331,7 @@
                                             <div class="col-7">
                                                 <div class="til">
                                                     <a style="text-decoration: none; color: black; font-weight: bold;"
-                                                        href="">Những sai lầm cơ bản khi chọn mỹ
+                                                        href="tintuc-detail.html">Những sai lầm cơ bản khi chọn mỹ
                                                         phẩm</a>
                                                 </div>
                                                 <p style="font-size: 12px;">Thứ hai, ngày 20/09/2022</p>
@@ -352,6 +362,7 @@
                             <div class="card-body">
                                 <h5 class="card-title  text-truncate">Sản phẩm chính hãng số 1</h5>
                                 <p style="color: red;">Giá: 6.900.000 VNĐ</p>
+                                <p class="text-"></p>
                             </div>
                         </a>
                     </div>
@@ -361,6 +372,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Sản phẩm 2</h5>
                                 <p style="color: red;">Giá: 6.900.000 VNĐ</p>
+                                <p><del>7.500.000 VNĐ</del></p>
                             </div>
                         </a>
                     </div>
@@ -512,7 +524,7 @@
                                         <div class="til">
                                             <a class="text-truncate"
                                                 style="text-decoration: none; color: black; font-weight: bold;"
-                                                href="">Điện thoại 1</a>
+                                                href="phone.html">Điện thoại 1</a>
                                         </div>
                                         <p style="font-size: 12px; color: red;">Giá: 6.900.000 VNĐ</p>
                                     </div>
@@ -1037,7 +1049,7 @@
         crossorigin="anonymous"></script>
     <script src="main.js"></script>
     <script src="owl/owl.carousel.min.js"></script>
-    
+
 </body>
 
 </html>
