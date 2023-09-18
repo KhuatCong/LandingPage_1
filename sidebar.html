@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sidebar.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="menu" class="menu">
+        <div class="icon">
+            <h2><i class="fas fa-atom"></i>Sidebar</h2>
+        </div>
+        <div class="ul">
+            <ul>
+                <li>DATA MANAGEMENT</li>
+                <li>LOCATION</li>
+                <li>STUDY</li>
+                <li>COLLECTIONS</li>
+                <li>CREDITS</li>
+            </ul>
+        </div>
+    </div>
+    <div id="manhinhden" class="manhinhden">
+
+    </div>
+    <div id="nut" class="nut">
+        <button type="button">click</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // var nut = document.querySelectorAll("button");
+            // var nut = nut[0];
+            // var menu = document.querySelectorAll(".menu");
+            // var menu = menu[0];
+            // var manhinhden = document.querySelectorAll(".manhinhden");
+            // var manhinhden = manhinhden[0];
+
+            var nut = document.getElementById('nut');
+            var menu = document.getElementById('menu');
+            var manhinhden = document.getElementById('manhinhden');
+            nut.onclick = function () {
+                menu.classList.add('menuhienra');
+                manhinhden.classList.add('manhinhdenhienra');
+            }
+            manhinhden.onclick = function () {
+                manhinhden.classList.remove('manhinhdenhienra');
+                menu.classList.remove('menuhienra');
+            }
+        }, false)
+    </script>
+</body>
+
+</html>

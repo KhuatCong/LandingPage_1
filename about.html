@@ -11,11 +11,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
         #side {
             width: 20%;
             height: 100%;
             transform: translateX(-100%);
             transition: .4s;
+            z-index: 5;
         }
 
         #manhinhden {
@@ -26,12 +42,14 @@
             top: 0;
             left: 0;
             background-color: #00000054;
-            z-index: 9;
+            z-index: 3;
             cursor: pointer;
+            visibility: hidden
         }
 
         .manhinhdenhienra {
             opacity: 1;
+            visibility: visible;
         }
 
         #side {
@@ -41,23 +59,32 @@
         .sidehienra {
             transform: translateX(0);
             transition: .5s;
-            visibility: visible;
+        }
+
+        #show {
+            position: absolute;
+            top: 40%;
+            left: 50%;
         }
     </style>
 </head>
 
 <body>
-
-
-    <div id="side" class="side bg-danger">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptate expedita veritatis.
-            Voluptatibus nulla atque culpa deleniti, maiores doloribus nisi magni, nesciunt, beatae vitae natus iure
-            eveniet commodi quam quas!
-        </p>
+    <div id="side" class="side bg-warning">
+        <ul>
+            <li>DATA MANAGEMENT</li>
+            <li>LOCATION</li>
+            <li>STUDY</li>
+            <li>COLLECTIONS</li>
+            <li>CREDITS</li>
+        </ul>
     </div>
-    <div id="manhinhden" class=""></div>
-    <button class="btn btn-outline-info" id="show">Show</button>
+    <div id="manhinhden" class="manhinhden">
+
+    </div>
+    <div id="show" class="show">
+        <button class="btn btn-outline-info">Show</button>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -84,6 +111,26 @@
                 menu.classList.remove('sidehienra');
             }
         }, false)
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     // var nut = document.querySelectorAll("button");
+        //     // var nut = nut[0];
+        //     // var menu = document.querySelectorAll(".menu");
+        //     // var menu = menu[0];
+        //     // var manhinhden = document.querySelectorAll(".manhinhden");
+        //     // var manhinhden = manhinhden[0];
+
+        //     var nut = document.getElementById('show');
+        //     var menu = document.getElementById('side');
+        //     var manhinhden = document.getElementById('manhinhden');
+        //     nut.onclick = function () {
+        //         menu.classList.add('menuhienra');
+        //         manhinhden.classList.add('manhinhdenhienra');
+        //     }
+        //     manhinhden.onclick = function () {
+        //         manhinhden.classList.remove('manhinhdenhienra');
+        //         menu.classList.remove('menuhienra');
+        //     }
+        // }, false)
 
     </script>
 </body>
