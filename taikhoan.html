@@ -12,7 +12,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
     <style>
         .menu_user {
@@ -25,13 +26,16 @@
             color: gray;
         }
 
-        body {
+        /* body {
             background-color: #f8f8f8;
-        }
+        } */
     </style>
 </head>
 
 <body>
+    <!-- <audio autoplay id="auto">
+        <source src="audio/audiohome.mp3">
+    </audio> -->
     <header class="header">
         <section id="myheader">
             <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
@@ -101,6 +105,7 @@
         <div class="taikhoan mt-5">
             <div class="container">
                 <div class="row">
+                    <!-- nav-content  -->
                     <div class="col-md-4 col-lg-3">
                         <div class="menu_user">
                             <ul class="nav nav-pills nav-fill flex-md-column">
@@ -109,58 +114,142 @@
                                             class="fa-solid fa-house mr-2"></i>Trang chủ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#el2" data-toggle="pill"><i
-                                            class="fa-solid fa-file-circle-check mr-2"></i>Đơn hàng</a>
+                                    <a class="nav-link" href="#donhang_user" data-toggle="pill"><i
+                                            class="fa-solid fa-file-circle-check mr-2"></i>Lịch sử mua hàng</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#el3" data-toggle="pill"><i
+                                    <a class="nav-link" href="#taikhoan_user" data-toggle="pill"><i
                                             class="fa-solid fa-user mr-2"></i>Tài khoản của bạn</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#el3" data-toggle="pill"><i
+                                    <a class="nav-link" href="home.html"><i
                                             class="fa-solid fa-right-from-bracket mr-2"></i>Thoát tài khoản</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <!-- tab-content -->
                     <div class="col-md-8 col-lg-9">
                         <div class="info-user">
                             <div class="tab-content">
+                                <!-- home user -->
                                 <div id="home_user" class="tab-pane fade show active">
+                                    <!-- avatar  -->
                                     <div class="info-user_top">
                                         <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="border rounded bg-white text-center py-5 mb-3">
-                                                    <p>Xin chào</p>
-                                                    <h1 style="color: red; text-transform: uppercase;">Khuất Phú Công
-                                                    </h1>
+                                            <!-- avatar welcome -->
+                                            <div class="col-lg-5">
+                                                <div class="border bg-white text-center p-2 mb-3"
+                                                    style="border-radius: 15px;">
+                                                    <div class="avatar_user p-2 border rounded-circle"
+                                                        style="width: 70px; height: 70px; margin: 0 auto;">
+                                                        <img class="rounded-circle" src="img/avatar.jpg"
+                                                            style="width: 100%; height: 100%; object-fit:cover;" alt="">
+                                                    </div>
+                                                    <div class="welcome_user">
+                                                        <p class="my-1">Xin chào</p>
+                                                        <p
+                                                            style="color: red; font-weight: bold; text-transform: uppercase; font-size: 20px;">
+                                                            Khuất Phú Công</p>
+                                                        <div class="date_welcome">
+                                                            <p>Ngày tham gia</p>
+                                                            <div class="date">
+                                                                <i class="fa-solid fa-calendar-days fa-2xl my-4"
+                                                                    style="color: #ff0000;"></i>
+                                                            </div>
+                                                            <p>19-09-2023</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <div class="border rounded bg-warning py-5 text-center mb-3">
-                                                    <button class="btn btn-danger">
+                                            <!-- chương trình nổi bật -->
+                                            <div class="col-lg-7">
+                                                <div class="p-4 text-center mb-3"
+                                                    style="border-radius: 15px; background-color: #fff5e6;">
+                                                    <button class="btn btn-danger mb-3 text-uppercase font-weight-bold"
+                                                        style="width: 70%; border-radius: 15px;">
                                                         Chương trình nổi bật
                                                     </button>
+                                                    <div class="slider_noibat">
+                                                        <div class="slick_item mx-2">
+                                                            <a href="#"><img src="img/banner1.jpg"
+                                                                    style="width: 100%; border-radius: 20px;"
+                                                                    alt=""></a>
+
+                                                        </div>
+                                                        <div class="slick_item mx-2">
+                                                            <a href="#"><img src="img/banner2.jpg"
+                                                                    style="width: 100%; border-radius: 20px;"
+                                                                    alt=""></a>
+
+                                                        </div>
+                                                        <div class="slick_item mx-2">
+                                                            <a href="#"><img src="img/banner3.jpg"
+                                                                    style="width: 100%; border-radius: 20px;"
+                                                                    alt=""></a>
+
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tip_user border rounded p-2">
+                                    <!-- alert tips -->
+                                    <div class="tip_user border p-2" style="border-radius: 10px;">
                                         <div class="tip-title font-weight-bold">
-                                            <i class="fa-solid fa-circle-info mr-1"></i><span style="font-size: 14px;">Tips</span>
+                                            <i class="fa-solid fa-circle-info mr-1" style="color: #006eff;"></i><span
+                                                style="font-size: 14px;">Tips</span>
                                         </div>
-                                        <div class="tip-content ml-2 mt-1 text-truncate">
+                                        <div class="tip-content ml-3 text-truncate">
                                             <small>Cập nhật thông tin cá nhân và địa chỉ để có trải nghiệm đặt hàng
                                                 nhanh và thuận tiện hơn.</small>
                                         </div>
                                         <!-- <a style="font-size: 10px;" class="tip_btn btn btn-outline-success ml-2 mt-2" href="">Cập nhật ngay</a> -->
                                     </div>
+                                    <!-- box content  -->
+                                    <div class="box_content my-4">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-5 col-lg-4 text-center mb-3">
+                                                <div class="box-icon p-3"
+                                                    style="border-radius: 15px; background-color: #edf1fd;">
+                                                    <div class="item-box">
+                                                        <img src="img/donhang.webp"
+                                                            style="width: 100%; border-radius: 50%;" alt="">
+                                                    </div>
+                                                    <div class="item-info mb-5">
+                                                        <p class="mb-2 text-danger font-weight-bold"
+                                                            style="font-size: 20px;">Đơn hàng của bạn
+                                                        </p>
+                                                        <p>0 đơn hàng</p>
+                                                    </div>
+                                                    <button class="btn btn-outline-success">Xem chi tiết</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-5 col-lg-4 text-center mb-3">
+                                                <div class="box-icon p-3"
+                                                    style="border-radius: 15px; background-color: #edf1fd;">
+                                                    <div class="item-box">
+                                                        <img src="img/donhang.webp"
+                                                            style="width: 100%; border-radius: 50%;" alt="">
+                                                    </div>
+                                                    <div class="item-info mb-5">
+                                                        <p class="mb-2 text-danger font-weight-bold"
+                                                            style="font-size: 20px;">Đơn hàng của bạn
+                                                        </p>
+                                                        <p>0 đơn hàng</p>
+                                                    </div>
+                                                    <button class="btn btn-outline-success">Xem chi tiết</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div id="el2" class="tab-pane fade">
+                                <div id="donhang_user" class="tab-pane fade">
                                     <h6>Xin chào</h6>
                                     <p>Đây là tab panel 2</p>
                                 </div>
-                                <div id="el3" class="tab-pane fade">
+                                <div id="taikhoan_user" class="tab-pane fade">
                                     <h6>Xin chào</h6>
                                     <p>Đây là tab panel 3</p>
                                 </div>
@@ -169,10 +258,6 @@
 
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
     </div>
@@ -191,9 +276,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="main.js"></script>
 
+    <script>
+        $(function () {
+            $('.slider_noibat').slick({
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: false,
 
+            });
+        })
+    </script>
 
 </body>
 
