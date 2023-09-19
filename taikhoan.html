@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
+    <title>tài khoản</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="backtop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -15,8 +15,18 @@
 
 
     <style>
+        .menu_user {
+            border-radius: 10px;
+            padding: 15px;
+            background: #f7feff;
+        }
+
+        .menu_user a {
+            color: gray;
+        }
+
         body {
-            background-color: white !important;
+            background-color: #f8f8f8;
         }
     </style>
 </head>
@@ -26,9 +36,10 @@
         <section id="myheader">
             <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
                 <div class="container">
-                    <a href="home.html">
-                        <img src="img/logo/logo.png" width="50%" alt="">
+                    <a class="navbar-brand" href="home.html">
+                        <img src="img/logo/logo.png" width="auto" alt="">
                     </a>
+
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -59,20 +70,25 @@
                             </li>
                         </ul>
 
-                        <div class="dropdown">
-                            <div class="avatar mr-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa-regular fa-circle-user fa-2xl"></i>
+                        <div class="nav-right d-flex">
+                            <div class="dropdown">
+                                <div class="avatar mr-4" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fa-regular fa-circle-user fa-2xl"></i>
+                                </div>
+                                <div class="dropdown-menu">
+                                    <a href="login.html" class="dropdown-item">Login</a>
+                                    <a href="taikhoan.html" class="dropdown-item">Tài khoản</a>
+                                </div>
                             </div>
-                            <div class="dropdown-menu">
-                                <a href="login.html" class="dropdown-item">Login</a>
-                                <a href="taikhoan.html" class="dropdown-item">Tài khoản</a>
-                            </div>
-                        </div>
 
-                        <div class="card-home">
-                            <a href="cart.html" type="button" class="btn btn-info"><i class="fa-solid fa-cart-shopping"
-                                    style="color: white;"></i><span class="badge">7</span>
-                            </a>
+                            <div class="cart-home">
+                                <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: white;">
+                                        <span class="badge badge-danger badge-pill">7</span>
+                                    </i>
+
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -82,11 +98,81 @@
 
 
     <div class="content">
-        <div class="taikhoan">
+        <div class="taikhoan mt-5">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="menu_user">
+                            <ul class="nav nav-pills nav-fill flex-md-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#home_user" data-toggle="pill"><i
+                                            class="fa-solid fa-house mr-2"></i>Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#el2" data-toggle="pill"><i
+                                            class="fa-solid fa-file-circle-check mr-2"></i>Đơn hàng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#el3" data-toggle="pill"><i
+                                            class="fa-solid fa-user mr-2"></i>Tài khoản của bạn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#el3" data-toggle="pill"><i
+                                            class="fa-solid fa-right-from-bracket mr-2"></i>Thoát tài khoản</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-9">
+                        <div class="info-user">
+                            <div class="tab-content">
+                                <div id="home_user" class="tab-pane fade show active">
+                                    <div class="info-user_top">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="border rounded bg-white text-center py-5 mb-3">
+                                                    <p>Xin chào</p>
+                                                    <h1 style="color: red; text-transform: uppercase;">Khuất Phú Công
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="border rounded bg-warning py-5 text-center mb-3">
+                                                    <button class="btn btn-danger">
+                                                        Chương trình nổi bật
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tip_user border rounded p-2">
+                                        <div class="tip-title font-weight-bold">
+                                            <i class="fa-solid fa-circle-info mr-1"></i><span style="font-size: 14px;">Tips</span>
+                                        </div>
+                                        <div class="tip-content ml-2 mt-1 text-truncate">
+                                            <small>Cập nhật thông tin cá nhân và địa chỉ để có trải nghiệm đặt hàng
+                                                nhanh và thuận tiện hơn.</small>
+                                        </div>
+                                        <!-- <a style="font-size: 10px;" class="tip_btn btn btn-outline-success ml-2 mt-2" href="">Cập nhật ngay</a> -->
+                                    </div>
+                                </div>
+                                <div id="el2" class="tab-pane fade">
+                                    <h6>Xin chào</h6>
+                                    <p>Đây là tab panel 2</p>
+                                </div>
+                                <div id="el3" class="tab-pane fade">
+                                    <h6>Xin chào</h6>
+                                    <p>Đây là tab panel 3</p>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
                 </div>
+
+
+
+
             </div>
         </div>
     </div>

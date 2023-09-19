@@ -96,42 +96,22 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var nut = document.getElementById('show');
-            var manhinh = document.getElementById('manhinhden');
-            var menu = document.getElementById('side');
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            var nut = document.getElementById("show");
+            var manhinh = document.getElementById("manhinhden");
+            var menu = document.getElementById("side");
 
             nut.onclick() = function () {
-                manhinh.classList.add('manhinhdenhienra');
-                menu.classList.add('sidehienra');
+                menu.classList.add("sidehienra");
+                manhinh.classList.add("manhinhdenhienra");
             }
 
             manhinh.onclick = function () {
-                manhinh.classList.remove('manhinhdenhienra');
-                menu.classList.remove('sidehienra');
+                manhinh.classList.remove("manhinhdenhienra");
+                menu.classList.remove("sidehienra");
             }
         }, false)
-        // document.addEventListener("DOMContentLoaded", function () {
-        //     // var nut = document.querySelectorAll("button");
-        //     // var nut = nut[0];
-        //     // var menu = document.querySelectorAll(".menu");
-        //     // var menu = menu[0];
-        //     // var manhinhden = document.querySelectorAll(".manhinhden");
-        //     // var manhinhden = manhinhden[0];
-
-        //     var nut = document.getElementById('show');
-        //     var menu = document.getElementById('side');
-        //     var manhinhden = document.getElementById('manhinhden');
-        //     nut.onclick = function () {
-        //         menu.classList.add('menuhienra');
-        //         manhinhden.classList.add('manhinhdenhienra');
-        //     }
-        //     manhinhden.onclick = function () {
-        //         manhinhden.classList.remove('manhinhdenhienra');
-        //         menu.classList.remove('menuhienra');
-        //     }
-        // }, false)
-
     </script>
 </body>
 

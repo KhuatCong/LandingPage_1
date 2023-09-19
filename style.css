@@ -365,3 +365,17 @@ del{
     position: sticky;
     top: 0;
 }
+
+.cart-home i{
+    position: relative;
+    font-size: 20px;
+}
+.cart-home span{
+    position: absolute;
+    top: -6px;
+    left: 15px;
+    font-size: 9px;
+}
+.tip_user{
+    background-color: rgb(157, 255, 255);
+}
