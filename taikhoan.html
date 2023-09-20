@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tài khoản</title>
+    <title>Thông tin tài khoản khách hàng</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="backtop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -20,15 +20,22 @@
             border-radius: 10px;
             padding: 15px;
             background: #f7feff;
+            margin-bottom: 10px;
+        }
+
+        @media screen and (min-width:992px) {
+            .menu_user {
+                height: 100vh;
+            }
         }
 
         .menu_user a {
             color: gray;
         }
 
-        /* body {
+        body {
             background-color: #f8f8f8;
-        } */
+        }
     </style>
 </head>
 
@@ -36,7 +43,7 @@
     <!-- <audio autoplay id="auto">
         <source src="audio/audiohome.mp3">
     </audio> -->
-    <header class="header">
+    <header class="header sticky-top" style="z-index: 9;">
         <section id="myheader">
             <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
                 <div class="container">
@@ -85,12 +92,10 @@
                                     <a href="taikhoan.html" class="dropdown-item">Tài khoản</a>
                                 </div>
                             </div>
-
                             <div class="cart-home">
                                 <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: white;">
                                         <span class="badge badge-danger badge-pill">7</span>
                                     </i>
-
                                 </a>
                             </div>
                         </div>
@@ -102,26 +107,26 @@
 
 
     <div class="content">
-        <div class="taikhoan mt-5">
+        <div class="taikhoan mt-4">
             <div class="container">
                 <div class="row">
                     <!-- nav-content  -->
                     <div class="col-md-4 col-lg-3">
                         <div class="menu_user">
                             <ul class="nav nav-pills nav-fill flex-md-column">
-                                <li class="nav-item">
+                                <li class="nav-item mb-2">
                                     <a class="nav-link active" href="#home_user" data-toggle="pill"><i
                                             class="fa-solid fa-house mr-2"></i>Trang chủ</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item mb-2">
                                     <a class="nav-link" href="#donhang_user" data-toggle="pill"><i
                                             class="fa-solid fa-file-circle-check mr-2"></i>Lịch sử mua hàng</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item mb-2">
                                     <a class="nav-link" href="#taikhoan_user" data-toggle="pill"><i
                                             class="fa-solid fa-user mr-2"></i>Tài khoản của bạn</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item mb-2">
                                     <a class="nav-link" href="home.html"><i
                                             class="fa-solid fa-right-from-bracket mr-2"></i>Thoát tài khoản</a>
                                 </li>
@@ -139,8 +144,7 @@
                                         <div class="row">
                                             <!-- avatar welcome -->
                                             <div class="col-lg-5">
-                                                <div class="border bg-white text-center p-2 mb-3"
-                                                    style="border-radius: 15px;">
+                                                <div class="bg-white text-center p-2 mb-3" style="border-radius: 15px;">
                                                     <div class="avatar_user p-2 border rounded-circle"
                                                         style="width: 70px; height: 70px; margin: 0 auto;">
                                                         <img class="rounded-circle" src="img/avatar.jpg"
@@ -245,17 +249,138 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- đơn hàng user -->
                                 <div id="donhang_user" class="tab-pane fade">
-                                    <h6>Xin chào</h6>
-                                    <p>Đây là tab panel 2</p>
+                                    <!-- avtar đơn hàng -->
+                                    <div class="avatar_donhang d-flex align-items-center mb-3 p-3">
+                                        <div class="avatar-muahang p-2 bg-white"
+                                            style="width: 80px; height: 80px; border-radius: 50%;">
+                                            <img src="img/avatar.jpg" width="100%" height="100%"
+                                                style="border-radius: 50%;" alt="">
+                                        </div>
+                                        <div class="name-muahang ml-3">
+                                            <p class="font-weight-bold" style="font-size: 20px;">Khuất Phú Công</p>
+                                        </div>
+                                    </div>
+                                    <!-- tổng dơn hàng và doanh thu -->
+                                    <div class="donhang_doanhthu">
+                                        <div class="total_donhang text-center border-right w-100">
+                                            <p>0</p>
+                                            <p>Đơn hàng</p>
+                                        </div>
+                                        <div class="total_doanhthu text-center w-100">
+                                            <p>Doanh thu</p>
+                                            <p>0 VNĐ</p>
+                                        </div>
+                                    </div>
+                                    <!-- date đơn hàng -->
+                                    <div class="date_donhang d-flex justify-content-end my-3">
+                                        <div class="to_date mr-2">
+                                            <span>To: </span>
+                                            <input type="date" name="date_donhangto" id="dateto" value="2023-09-20">
+                                        </div>
+                                        <div class="from_date">
+                                            <span>from: </span>
+                                            <input type="date" name="date_donhangfrom" id="datefrom" value="2023-09-20">
+                                        </div>
+                                    </div>
+                                    <!-- menu đơn hàng -->
+                                    <div class="menu_donhang my-3">
+                                        <div class="menu_button d-flex justify-content-center flex-wrap">
+                                            <div class="item_button mr-2">
+                                                <button class="btn btn-outline-danger mb-2">Tất cả</button>
+                                            </div>
+                                            <div class="item_button mr-2">
+                                                <button class="btn btn-outline-danger mb-2">Chờ xác nhận</button>
+                                            </div>
+                                            <div class="item_button mr-2">
+                                                <button class="btn btn-outline-danger mb-2">Đã xác nhận</button>
+                                            </div>
+                                            <div class="item_button mr-2">
+                                                <button class="btn btn-outline-danger mb-2">Đang vận chuyển</button>
+                                            </div>
+                                            <div class="item_button mr-2">
+                                                <button class="btn btn-outline-danger mb-2">Đã giao</button>
+                                            </div>
+                                            <div class="item_button mr-2">
+                                                <button class="btn btn-outline-danger mb-2">Đã hủy</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!-- tài khoản user -->
                                 <div id="taikhoan_user" class="tab-pane fade">
-                                    <h6>Xin chào</h6>
-                                    <p>Đây là tab panel 3</p>
+                                    <!-- avatar user -->
+                                    <div class="avatar-user text-center mb-5">
+                                        <div class="avatar-user p-2 bg-white"
+                                            style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto;">
+                                            <img src="img/avatar.jpg" width="100%" height="100%"
+                                                style="border-radius: 50%;" alt="">
+                                        </div>
+                                        <div class="name-user ml-3">
+                                            <p class="font-weight-bold text-danger" style="font-size: 20px;">Khuất Phú
+                                                Công</p>
+                                        </div>
+                                    </div>
+                                    <!-- form  -->
+                                    <div class="form-info-user">
+                                        <div class="row justify-content-center">
+                                            <!-- form thay đổi thông tin -->
+                                            <div class="col-sm-9 col-lg-6">
+                                                <div class="form-info p-3 mb-3" style="border-radius: 10px;">
+                                                    <form action="">
+                                                        <h6 class="text-center" style="font-size: 20px;">Thông tin cá
+                                                            nhân</h6>
+                                                        <div class="form-group">
+                                                            <label for="">Tên người dùng</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Giới tính</label>
+                                                            <select name="" id="" class="form-control">
+                                                                <option value="1" selected>Nam</option>
+                                                                <option value="0">Nữ</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Email</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Điện thoại</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <button type="submit" class="btn btn-success">Cập nhật</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- form thay đổi mật khẩu -->
+                                            <div class="col-sm-9 col-lg-6">
+                                                <div class="form-password p-3 mb-3" style="border-radius: 10px;">
+                                                    <form action="">
+                                                        <h6 class="text-center" style="font-size: 20px;">Đổi mật khẩu
+                                                        </h6>
+                                                        <div class="form-group">
+                                                            <label for="">Mật khẩu cũ</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Mật khẩu mới</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Nhập lại mật khẩu</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <button class="btn btn-danger">Cập nhật</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -288,6 +413,10 @@
 
             });
         })
+
+        // var today = new Date();
+        // var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDay();
+        // document.getElementById('date').value = date;
     </script>
 
 </body>

@@ -54,7 +54,7 @@
                     <div class="row d-flex align-items-center">
                         <div class="col-sm-4 col-lg-4 col-xl-4">
                             <a href="home.html">
-                            <img src="img/logo/logo.png" width="auto" alt=""></a>
+                                <img src="img/logo/logo.png" width="auto" alt=""></a>
                         </div>
                         <div class="col-sm-8 col-lg-8 col-xl-4">
                             <div class="input-group">
@@ -134,15 +134,29 @@
                                 <a style="text-transform: uppercase;" class="nav-link" href="tintuc.html">Tin tức</a>
                             </li>
                             <li class="nav-item">
-                                <a style="text-transform: uppercase;" class="nav-link" href="huongdanmuahang.html">Hướng dẫn
+                                <a style="text-transform: uppercase;" class="nav-link" href="huongdanmuahang.html">Hướng
+                                    dẫn
                                     mua hàng</a>
                             </li>
                         </ul>
-                        <a href="login.html" class="btn btn-danger mr-2">Login</a>
-                        <a href="register.html" class="btn btn-outline-success mr-2">Register</a>
-                        <a href="cart.html" type="button" class="btn btn-info"><i class="fa-solid fa-cart-shopping"
-                                style="color: white;"></i><span class="badge">7</span>
-                        </a>
+                        <div class="nav-right d-flex">
+                            <div class="dropdown">
+                                <div class="avatar mr-4" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fa-regular fa-circle-user fa-2xl"></i>
+                                </div>
+                                <div class="dropdown-menu">
+                                    <a href="login.html" class="dropdown-item">Login</a>
+                                    <a href="taikhoan.html" class="dropdown-item">Tài khoản</a>
+                                </div>
+                            </div>
+                            <div class="cart-home">
+                                <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: white;">
+                                        <span class="badge badge-danger badge-pill">7</span>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -153,16 +167,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
+                    <!-- danh mục -->
                     <div class="menu-danhmuc-allproduct my-3">
-                        <div data-toggle="collapse" data-target="#menu-all" class="dropdown-toggle title bg-warning py-2 font-weight-bold text-white text-center text-uppercase"
+                        <div data-toggle="collapse" data-target="#menu-all"
+                            class="dropdown-toggle title bg-warning py-2 font-weight-bold text-white text-center text-uppercase"
                             style="font-size: 16px;">
-                           Danh mục
+                            Danh mục
                         </div>
                         <div id="menu-all" class="menu collapse show">
                             <ul class="list-group">
-                                <!-- <li class="list-group-item bg-warning text-center">Danh mục</li> -->
-                                <li class="list-group-item"><a href=""><i
-                                            class="fa-regular fa-square-plus mr-2"></i>Điện thoại - Phụ kiện</a></li>
+                                <li class="list-group-item"><a href="#" data-toggle="collapse"
+                                        data-target="#phone-list"><i class="fa-regular fa-square-plus mr-2"></i>Điện
+                                        thoại - Phụ kiện</a>
+                                    <ul style="list-style: none;" id="phone-list" class=" collapse w-100"
+                                        data-parent="#collapseMenu">
+                                        <li><a class="dropdown-item" href="phone.html">Samsung</a></li>
+                                        <li><a class="dropdown-item" href="phone.html">oppo</a></li>
+                                        <li><a class="dropdown-item" href="phone.html">Xiaomi</a></li>
+                                    </ul>
+                                </li>
                                 <li class="list-group-item"><a href=""><i class="fa-regular fa-square-plus mr-2"></i>Máy
                                         tính - Laptop</a></li>
                                 <li class="list-group-item"><a href=""><i
@@ -177,7 +200,7 @@
                     <div class="menu-filter-allproduct">
                         <div class="title bg-warning py-2 font-weight-bold text-white text-center text-uppercase"
                             style="font-size: 16px;">
-                           Hỗ trợ trực tuyến
+                            Hỗ trợ trực tuyến
                         </div>
                         <ul class="list-group">
                             <li class="list-group-item">
@@ -186,7 +209,8 @@
                                 </div>
                                 <div class="hotro mb-3">
                                     <div class="phone-hotro mt-3">
-                                        <i class="fa-solid fa-phone-volume mr-2"></i><span style="color: red; font-weight: bold;">0366332897</span>
+                                        <i class="fa-solid fa-phone-volume mr-2"></i><span
+                                            style="color: red; font-weight: bold;">0366332897</span>
                                     </div>
                                     <div class="title-hotro">
                                         <i class="fa-brands fa-skype mr-2"></i>Chăm sóc khách hàng
