@@ -472,3 +472,9 @@ img{
 .info_user_order{
     line-height: 35px;
 }
+.filter1 button{
+    font-size: 12px;
+}
+.card .card-body{
+    font-size: 12px;
+}
