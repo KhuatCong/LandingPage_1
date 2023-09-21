@@ -59,7 +59,7 @@ p {
         display: none;
     }
     .taikhoan{
-        margin-bottom: 45px;
+        margin-bottom: 60px;
     }
     .menu_user{
         display: none;
@@ -450,4 +450,25 @@ img{
     padding: 8px;
     background-color: black;
     border-radius: 50%;
+}
+.pre_order{
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 7px;
+}
+.pre_order a{
+    text-decoration: none;
+    color: black;
+}
+.pre_order a:hover{
+    text-decoration: none;
+    color: black;
+}
+.des_order{
+    background-color: white;
+    padding: 10px;
+}
+.info_user_order{
+    line-height: 35px;
 }

@@ -3,9 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chi tiết đơn hàng</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="backtop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            body{
+                background-color: #f8f8f8;
+            }
+        </style>
 </head>
 <body>
+    <header class="header sticky-top" style="z-index: 9;">
+        <section id="myheader">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+                <div class="container">
+                    <a class="navbar-brand" href="home.html">
+                        <img src="img/logo/logo.png" width="auto" alt="">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a style="text-transform: uppercase;" class="nav-link" href="home.html">Trang
+                                    chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="text-transform: uppercase;" class="nav-link" href="gioithieu.html">Giới
+                                    thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="text-transform: uppercase;" class="nav-link" href="lienhe.html">Liên
+                                    hệ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="text-transform: uppercase;" class="nav-link" href="tintuc.html">Tin
+                                    tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="text-transform: uppercase;" class="nav-link" href="huongdanmuahang.html">Hướng
+                                    dẫn
+                                    mua hàng</a>
+                            </li>
+                        </ul>
+
+                        <div class="nav-right d-flex">
+                            <div class="dropdown">
+                                <div class="avatar mr-4" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fa-regular fa-circle-user fa-2xl"></i>
+                                </div>
+                                <div class="dropdown-menu">
+                                    <a href="login.html" class="dropdown-item">Login</a>
+                                    <a href="taikhoan.html" class="dropdown-item">Tài khoản</a>
+                                </div>
+                            </div>
+                            <div class="cart-home">
+                                <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: white;">
+                                        <span class="badge badge-danger badge-pill">7</span>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <div class="pre_order">
+                <a href="taikhoan.html"><i class="fa-solid fa-chevron-left mr-2"></i>Quay lại</a>
+            </div>
+            <div class="des_order">
+                <h4 class="text-center">Thông tin đơn hàng</h4>
+                <div class="info_user_order my-3">
+                    <p>Họ tên:</p>
+                    <p>Địa chỉ</p>
+                    <p>Số điện thoại</p>
+                </div>
+                <div class="des_list_order">
+                    <div class="table-responsice">
+                        <table class="table table-bordered text-center">
+                            <thead class="text-truncate thead-dark">
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Mã đơn hàng</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Số lượng</th>
+                                    <th>Giá</th>
+                                    <th>Ngày đặt</th>
+                                    <th>Ngày giao hàng</th>
+                                    <th>Trạng thái</th>
+                                    <th>Tổng tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>vico102</td>
+                                    <td>Áo phông</td>
+                                    <td>2</td>
+                                    <td>50,000</td>
+                                    <td>18-09-2023</td>
+                                    <td>20-09-2023</td>
+                                    <td>Giao hàng thành công</td>
+                                    <td>100,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
