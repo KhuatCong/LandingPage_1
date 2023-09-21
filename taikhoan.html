@@ -111,9 +111,9 @@
             <div class="container">
                 <div class="row">
                     <!-- nav-content  -->
-                    <div class="col-md-4 col-lg-3">
+                    <div class="col-lg-3">
                         <div class="menu_user">
-                            <ul class="nav nav-pills nav-fill flex-md-column">
+                            <ul class="nav nav-pills flex-md-column">
                                 <li class="nav-item mb-2">
                                     <a class="nav-link active" href="#home_user" data-toggle="pill"><i
                                             class="fa-solid fa-house mr-2"></i>Trang chủ</a>
@@ -134,7 +134,7 @@
                         </div>
                     </div>
                     <!-- tab-content -->
-                    <div class="col-md-8 col-lg-9">
+                    <div class="col-lg-9">
                         <div class="info-user">
                             <div class="tab-content">
                                 <!-- home user -->
@@ -297,11 +297,71 @@
                                                 <button class="btn btn-outline-danger mb-2">Đang vận chuyển</button>
                                             </div>
                                             <div class="item_button mr-2">
-                                                <button class="btn btn-outline-danger mb-2">Đã giao</button>
+                                                <button class="btn btn-outline-danger mb-2">Giao hàng thành
+                                                    công</button>
                                             </div>
                                             <div class="item_button mr-2">
                                                 <button class="btn btn-outline-danger mb-2">Đã hủy</button>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <!-- danh sách đơn hàng -->
+                                    <div class="table_donhang">
+                                        <div class="table-responsive-xl">
+                                            <table class="table table-bordered text-center">
+                                                <thead class="text-truncate">
+                                                    <tr>
+                                                        <th>STT</th>
+                                                        <th>Mã đơn hàng</th>
+                                                        <th>Tổng tiền</th>
+                                                        <th>Trạng thái</th>
+                                                        <th>Hành động</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>vico102</td>
+                                                        <td>125,000</td>
+                                                        <td style="color: red;">Chờ xác nhận</td>
+                                                        <td>
+                                                            <a href=""
+                                                                style="text-decoration: none; color: red;">Hủy</a>
+                                                            <a href="order_detail.html"
+                                                                style="text-decoration: none; color: blue;">Xem</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>php9hd</td>
+                                                        <td>1,400,000</td>
+                                                        <td style="color: green;">Giao hàng thành công</td>
+                                                        <td>
+                                                            <a href="order_detail.html"
+                                                                style="text-decoration: none; color: blue;">Xem</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>php9hd</td>
+                                                        <td>1,400,000</td>
+                                                        <td style="color: green;">Giao hàng thành công</td>
+                                                        <td>
+                                                            <a href="order_detail.html"
+                                                                style="text-decoration: none; color: blue;">Xem</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <thead class="text-truncate">
+                                                    <tr>
+                                                        <th>STT</th>
+                                                        <th>Mã đơn hàng</th>
+                                                        <th>Tổng tiền</th>
+                                                        <th>Trạng thái</th>
+                                                        <th>Hành động</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
@@ -381,6 +441,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="menu-mobile">
+            <a href="taikhoan.html"><i class="fa-solid fa-house "></i><br>Home</a>
+            <a href="taikhoan.html"><i class="fa-solid fa-file-circle-check "></i><br>Đơn hàng</a>
+            <a href="taikhoan.html"><i class="fa-solid fa-user"></i><br>Tài khoản</a>
+            <a href="taikhoan.html"><i class="fa-solid fa-right-from-bracket"></i><br>Đăng xuất</a>
         </div>
     </div>
 

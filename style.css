@@ -58,9 +58,23 @@ p {
     .menu-phone {
         display: none;
     }
+    .taikhoan{
+        margin-bottom: 45px;
+    }
+    .menu_user{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
 
     .right-phone-product {
         display: none;
+    }
+}
+@media screen and (min-width:769px) {
+    .menu-mobile{
+        visibility: hidden;
     }
 }
 
@@ -411,4 +425,29 @@ img{
 }
 .tin-noi-bat{
     border: 1px solid rgb(223, 223, 223);
+}
+.menu-mobile{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 2px 2px 2px #ddd;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    z-index: 99;
+}
+.menu-mobile a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.menu-mobile i{
+    color: white;
+    padding: 8px;
+    background-color: black;
+    border-radius: 50%;
 }

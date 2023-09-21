@@ -1,6 +1,6 @@
 #back-to-top {
     position: fixed;
-    bottom: 20px;
+    bottom: 60px;
     right: 40px;
     z-index: 9999;
     width: 32px;
@@ -15,7 +15,7 @@
     opacity: 0;
 }
 #back-to-top:hover {
-    background: #34c3ee;
+    background: #ffc107;
 }
 #back-to-top.show {
     opacity: 1;
