@@ -271,14 +271,15 @@
                                         </div>
                                     </div>
                                     <!-- date đơn hàng -->
-                                    <div class="date_donhang d-flex justify-content-end my-3" style="align-items: baseline;">
+                                    <div class="date_donhang d-flex justify-content-end my-3"
+                                        style="align-items: baseline;">
                                         <div class="to_date mr-2">
                                             <span>To: </span>
-                                            <input type="date" name="date_donhangto" id="dateto" value="2023-09-20">
+                                            <input type="date" name="date_donhangto" id="dateto" value="">
                                         </div>
                                         <div class="from_date mr-2">
                                             <span>from: </span>
-                                            <input type="date" name="date_donhangfrom" id="datefrom" value="2023-09-20">
+                                            <input type="date" name="date_donhangfrom" id="datefrom" value="">
                                         </div>
                                         <button class="btn btn-outline-success">Lọc</button>
                                     </div>
@@ -480,11 +481,13 @@
                 arrows: false,
 
             });
+
+            // var today = new Date();
+            // var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDay();
+            // $('#dateto').val(date);
         })
 
-        // var today = new Date();
-        // var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDay();
-        // document.getElementById('date').value = date;
+
     </script>
 
 </body>
