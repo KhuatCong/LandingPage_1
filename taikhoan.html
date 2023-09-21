@@ -25,7 +25,7 @@
 
         @media screen and (min-width:992px) {
             .menu_user {
-                height: 100vh;
+                height: 100%;
             }
         }
 
@@ -116,7 +116,7 @@
                             <ul class="nav nav-pills flex-md-column">
                                 <li class="nav-item mb-2">
                                     <a class="nav-link active" href="#home_user" data-toggle="pill"><i
-                                            class="fa-solid fa-house mr-2"></i>Trang chủ</a>
+                                            class="fa-solid fa-house mr-2"></i>Dashboard</a>
                                 </li>
                                 <li class="nav-item mb-2">
                                     <a class="nav-link" href="#donhang_user" data-toggle="pill"><i
@@ -271,15 +271,16 @@
                                         </div>
                                     </div>
                                     <!-- date đơn hàng -->
-                                    <div class="date_donhang d-flex justify-content-end my-3">
+                                    <div class="date_donhang d-flex justify-content-end my-3" style="align-items: baseline;">
                                         <div class="to_date mr-2">
                                             <span>To: </span>
                                             <input type="date" name="date_donhangto" id="dateto" value="2023-09-20">
                                         </div>
-                                        <div class="from_date">
+                                        <div class="from_date mr-2">
                                             <span>from: </span>
                                             <input type="date" name="date_donhangfrom" id="datefrom" value="2023-09-20">
                                         </div>
+                                        <button class="btn btn-outline-success">Lọc</button>
                                     </div>
                                     <!-- menu đơn hàng -->
                                     <div class="menu_donhang my-3">
