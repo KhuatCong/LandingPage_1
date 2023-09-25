@@ -41,13 +41,28 @@ $(document).ready(function () {
             }
         }
     });
-    
+
+    $('.img').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.click-img'
+    });
+    $('.click-img').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.img',
+        focusOnSelect: true
+    });
+
 })
 
 // alert('Về "Trang chủ" để sử dụng tất cả chức năng');
 
-function change(image) {
-    var content = document.getElementById('img');
+// function change(image) {
+//     var content = document.getElementById('img');
 
-    content.src = image.src;
-};
+//     content.src = image.src;
+// };
+
