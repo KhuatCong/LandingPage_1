@@ -56,6 +56,33 @@ $(document).ready(function () {
         focusOnSelect: true
     });
 
+    $('.list-tin').slick({
+        vertical: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+    });
+
+    $('.list-phone-goiy').slick({
+        vertical: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+    });
+
+    $('.list-thoitrang').slick({
+        vertical: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+    });
+
 })
 
 // alert('Về "Trang chủ" để sử dụng tất cả chức năng');
